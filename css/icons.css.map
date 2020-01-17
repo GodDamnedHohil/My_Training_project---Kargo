@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/icons.scss"
+    ],
+    "names": [],
+    "file": "icons.css"
+}
