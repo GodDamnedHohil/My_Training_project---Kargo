@@ -13,7 +13,11 @@
 .hero
   height: 740px
   width: 100%
-  background-image: url("../img/hero-bg.jpg") 
+  background-image: url("../img/hero-bg.jpg")
+  background-repeat: no-repat
+  background-size: cover
+  background-position: 40%
+  overflow-x: cut
   &__nav-wrap
     width: 100%
     height: 80px
@@ -115,6 +119,7 @@
   &__form-input:last-child
     padding: 13px 114px 22px 20px
     line-height: 15px
+    width: 273px
   &__form-button
     +semibold
     +uppercase
@@ -135,5 +140,193 @@
   &__form-button:focus
     outline: none
 
+@media (max-width: 1173px)
+  .hero
+    height: 1140px
+    &__main
+      height: 900px
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+    &__form-title
+      display: flex
+      flex-direction: row
+    &__form-title span:first-of-type
+      width: 150px
+      +semibold
+      font-size: 16px
+    &__form-title span:last-of-type
+      font-size: 16px
+    &__form-wrap
+      height: 400px
+      width: 500px
+    &__input-group
+      width: 500px
+    &__form-input
+      padding: 13px 220px 13px 20px  
+    &__form-input:last-child
+      padding: 13px 220px 22px 20px
+      line-height: 15px
+      width: 378px
+    &__form-button
+      height: 75px
+      width: 250px
+      font-size: 16px
+    &__logo
+      width: 330px
 
+@media ( max-width: 1020px )
+  .hero
+    &__title
+      text-align: center
+    &__logo
+      display: none
+    &__nav-wrap
+      display: flex
+      flex-direction: row
+      justify-content: center
+
+@media (max-width: 780px)
+  iframe
+    width: 560px
+    height: 280px
+      
+  
+
+@media (max-width: 590px)
+  iframe
+    width: 460px
+    height: 230px
+
+  .hero
+    &__title
+      font-size: 40px
+    &__form-wrap
+      width: 460px
+      height: 400px
+    &__input-group
+      width: 460px
+    &__navbar-link
+      font-size: 10px
+      display: block
+      position: relative
+      -webkit-tap-highlight-color: rgba(0, 0,0, 0 )
+    &__navbar-link::after
+      display: block
+      content: ''
+      background-color: #ffffff
+      position: absolute 
+      height: 1px
+      width: 0%
+      left: 50%
+      transition: width .4s ease-in-out
+      transform: translateX(-50%)
+    &__navbar-link:active
+      text-decoration: none
+    &__navbar-link:hover::after
+      width: 100%
+    &__navbar-link:focus::after
+      width: 100%
+      
+    .arrow
+      display: none
+
+@media (max-width: 590px)
+  .hero
+    height: 900px
+    &__title
+      font-size: 25px
+      &-wrap
+        height: 100px
+    &__nav-wrap
+      height: 55px
+    &__form-wrap
+      height: 400px
+      width: 315px
+    &__main
+      height: 700px
+    &__form-title
+      height: 70px
+      background: $dark-blue
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__form-title span:nth-of-type(1)
+      +bold
+      +uppercase
+      font-size: 15px
+      color: #ffffff
+      line-height: 20px
+    &__form-title span:nth-of-type(2)
+      +semibold
+      +uppercase
+      font-size: 12px
+      color: #ffffff
+    &__input-container 
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: flex-start
+      height: 330px
+      background: rgba(213,210,212,0.7)
+    &__input-group
+      padding-top: 15px
+      width: 280px
+      height: 225px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+    &__form-input
+      +light
+      font-size: 13px
+      padding: 13px 115px 13px 20px
+      border: 1px solid #a3a0a2
+    &__form-input:focus
+      outline: none
+    &__form-input:last-child
+      padding: 13px 114px 22px 20px
+      line-height: 15px
+      width: 273px
+    &__form-button
+      +semibold
+      +uppercase
+      font-size: 14px
+      color: #ffffff
+      margin-top: 15px
+      padding: 15px 30px
+      background: #e93b3b
+      border: none
+      border-radius: 5px
+      transition: ease-in-out 0.3s
+    &__form-button:hover
+      background: #ff6060
+      cursor: pointer
+    &__form-button:active
+      background: #ffffff 
+      color: #e93b3b
+    &__form-button:focus
+      outline: none
+
+@media ( max-width: 490px )
+  iframe
+    width: 360px
+    height: 180px
+
+@media ( max-width: 390px )
+  iframe
+    width: 300px
+    height: 150px
+  .hero
+    &__navbar-link
+      font-size: 
+    &__form-wrap
+      width: 300px
+    &__input-group
+      width: 300px
+    &__navbar-link
+      font-size: 7px
+  
+  
 

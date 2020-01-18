@@ -48,7 +48,7 @@
     outline: none
   //---links---
   &__china-delivery
-    display: inline-block
+    display: block
     position: relative
     text-decoration: none
     color: $grey
@@ -81,4 +81,63 @@
 .email-logo
   +icon
   
-    
+@media ( max-width: 1173px)
+  .header
+    height: 80px
+    &__button 
+      height: 45px
+      width: 158px
+      font-size: 21px
+      margin-right: 300px
+    &__email
+      display: none
+    &__mobile
+      display: none
+    &__china-delivery a:nth-of-type(1)
+      font-size: 20px
+    &__china-delivery a:nth-of-type(2)
+      font-size: 20px
+
+@media (max-width: 1020px)
+  .header
+    &__button
+      margin-right: 140px
+
+  iframe
+    width: 750px
+    height: 375px
+      
+  .delivery-logo
+    display: none
+
+  .calculate-price-logo
+    display: none
+
+@media (max-width: 780px)
+  .calculate-price-logo 
+    display: inline
+    +icon-adaptive
+    &__text
+      display: none
+
+  .delivery-logo
+    display: inline
+    +icon-adaptive
+    &__text
+      display: none
+
+  .header
+    &__button
+      margin-right: 140px
+
+@media (max-width: 490px)
+  .header
+    &__button
+      margin-right: 80px
+
+@media ( max-width: 390px )
+  .header
+    &__button
+      margin-right: 40px
+  
+
