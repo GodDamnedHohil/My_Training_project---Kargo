@@ -19,6 +19,16 @@
 }
 
 @font-face {
+  font-family: 'Open Sans Semibold';
+  src: url('../fonts/OpenSans-SemiBold.eot');
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+  url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Open Sans Bold';
   src: url('../fonts/OpenSans-Bold.eot');
   src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
@@ -28,17 +38,56 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Roboto Condensed Bold';
+  src: url('../fonts/RobotoCondensed-Bold.eot');
+  src: url('../fonts/RobotoCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RobotoCondensed-Bold.woff') format('woff'),
+  url('../fonts/RobotoCondensed-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Roboto Condensed Regular';
+  src: url('../fonts/RobotoCondensed-Regular.eot');
+  src: url('../fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+  url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@mixin uppercase {
+  text-transform: uppercase;
+}
 
 @mixin light {
   font-family: 'Open Sans Light';
+}
+
+@mixin regular {
+  font-family: 'Roboto Condensed Regular';
+}
+
+@mixin semibold {
+  font-family: 'Open Sans Semibold';
 }
 
 @mixin bold {
   font-family: 'Open Sans Bold';
 }
 
-$grey:#d3d6d8
-   
+@mixin bold-secondary {
+  font-family: 'Roboto Condensed Bold';
+}
+
+@mixin regular-secondary {
+  font-family: 'Roboto Condensed Regular';
+}
+
+
+ 
 
 

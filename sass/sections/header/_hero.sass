@@ -1,0 +1,139 @@
+#logo
+  &-bold
+    +bold-secondary
+    color: #ffffff
+    font-size: 27px
+    +uppercase
+  &-regular
+    +regular-secondary
+    color: #ffffff
+    font-size: 12px
+    +uppercase
+
+.hero
+  height: 740px
+  width: 100%
+  background-image: url("../img/hero-bg.jpg") 
+  &__nav-wrap
+    width: 100%
+    height: 80px
+    display: flex
+    flex-direction: row
+     //-------logo----------------
+  &__logo
+    height: inherit
+    width: 490px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: flex-start
+  &__logo-text
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: center
+    //---------navbar--------------
+  &__navbar
+    width: 650px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+  &__navbar-link
+    +bold
+    +uppercase
+    color: #ffffff
+    font-size: 13px
+    text-decoration: none
+  &__navbar-link:hover 
+    .arrow
+      margin-bottom: -5px
+      transition: 0.3s ease-in-out
+      cursor: pointer
+    //----------title------------------
+  &__title-wrap
+    width: 100%
+    height: 150px
+    display: flex
+    justify-content: center
+    align-items: center
+  &__title
+    +bold
+    font-size: 48px
+    +uppercase
+    color: #ffffff
+    //---------form---------------------------
+  &__main
+    height: 400px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+  &__form-wrap
+    height: 100%
+    width: 315px
+  &__form-title
+    height: 70px
+    background: $dark-blue
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__form-title span:nth-of-type(1)
+    +bold
+    +uppercase
+    font-size: 19px
+    color: #ffffff
+    line-height: 15px
+  &__form-title span:nth-of-type(2)
+    +semibold
+    +uppercase
+    font-size: 14px
+    color: #ffffff
+  &__input-container 
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
+    height: 330px
+    background: rgba(213,210,212,0.7)
+  &__input-group
+    padding-top: 15px
+    width: 280px
+    height: 225px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+  &__form-input
+    +light
+    font-size: 13px
+    padding: 13px 115px 13px 20px
+    border: 1px solid #a3a0a2
+  &__form-input:focus
+    outline: none
+  &__form-input:last-child
+    padding: 13px 114px 22px 20px
+    line-height: 15px
+  &__form-button
+    +semibold
+    +uppercase
+    font-size: 14px
+    color: #ffffff
+    margin-top: 15px
+    padding: 15px 30px
+    background: #e93b3b
+    border: none
+    border-radius: 5px
+    transition: ease-in-out 0.3s
+  &__form-button:hover
+    background: #ff6060
+    cursor: pointer
+  &__form-button:active
+    background: #ffffff 
+    color: #e93b3b
+  &__form-button:focus
+    outline: none
+
+
+
