@@ -1,1 +1,1 @@
-# My_Training_project---Kargo
+# This is my training front-end project
