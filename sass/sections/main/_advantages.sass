@@ -7,6 +7,7 @@
     flex-direction: row
     justify-content: space-between
     align-items: center
+    
   &__block
     height: 150px
     width: 265px
@@ -24,5 +25,19 @@
     font-size: 13px
     margin: 0
     text-align: center 
+
+@media ( max-width: 1173px )
+  .advantages
+    height: 380px
+    &__inner
+      height: inherit
+      justify-content: space-around
+      flex-wrap: wrap
+      width: 600px
+  
+@media ( max-width: 590px )
+  .advantages
+    height: 760px
+  
   
   

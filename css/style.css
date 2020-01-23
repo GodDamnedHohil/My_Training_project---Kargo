@@ -919,4 +919,24 @@ textarea {
   margin: 0;
   text-align: center;
 }
+
+@media (max-width: 1173px) {
+  .advantages {
+    height: 380px;
+  }
+  .advantages__inner {
+    height: inherit;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 600px;
+  }
+}
+
+@media (max-width: 590px) {
+  .advantages {
+    height: 760px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
