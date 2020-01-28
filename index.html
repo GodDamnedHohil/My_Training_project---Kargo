@@ -5,6 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/normalize.css">
    <title>KARGO</title>
 </head>
 <body>
@@ -79,6 +80,7 @@
   <!---------header--------------------------->
   <!------Main------>
   <main>
+    <!--Advantages-->
     <section class="advantages">
       <div class="container advantages__inner">
         <div class="advantages__block">
@@ -103,6 +105,109 @@
         </div>
       </div>
     </section>
+    <!--^Advantages^-->
+    <!--Calculator-->
+    <section class="calculator"> 
+      <div class="container calculator__inner">
+        <span class="main-title">Калькулятор доставки</span>
+        <fieldset class="container calculator__form-border">
+          <legend class="calculator__logo-position">
+            <div class="calculator__logo-wrap">
+              <object data="img/calculator-logo.svg" type="image/svg+xml"></object>
+            </div>
+          </legend>
+            <form id="delivery-calculator" class="calculator__form">
+              <!--issuance_dropdown-->
+              <div class="calculator__form-select-wrap">
+                <label class="label" for="issuance">Выдача:</label>
+                <input type="hidden" value="В Забайкальське" form="delivery-calculator">
+                  <div class="calculator__form-select issuance">
+                    <div class="calculator__form-select-checked issuance__value">В Забайкальське</div>
+                    <ul id="issuance" class="calculator__form-select-dropdown">
+                    <li class="
+                    calculator__form-select-option issuance__options" data-value="В Забайкальське">В Забайкальське</li>
+                    <li class="
+                    calculator__form-select-option issuance__options" data-value="В городе 2">В городе 2</li>
+                    <li class="
+                    calculator__form-select-option issuance__options" data-value="В городе 3">В городе 3</li>
+                    <li class="
+                    calculator__form-select-option issuance__options" data-value="В городе 4">В городе 4</li>
+                  </ul>
+                </div>  
+              </div>
+            
+              <!--^issuance_dropdown^-->
+              <!--product_type_dropdown-->
+              <div class="calculator__form-select-wrap">
+                <label class="label" for="issuance">Вид товара:</label>
+                <input type="hidden" value="В Забайкальське" form="delivery-calculator">
+                  <div class="calculator__form-select product-type">
+                    <div class="calculator__form-select-checked product-type_value">Тип товара:</div>
+                    <ul id="product-type" class="calculator__form-select-dropdown">
+                      <li class="
+                      calculator__form-select-option product-type__options" data-value="Тип 1">Тип 1</li>
+                      <li class="
+                      calculator__form-select-option product-type__options" data-value="Тип 2">Тип 2</li>
+                      <li class="
+                      calculator__form-select-option product-type__options" data-value="Тип 3">Тип 3</li>
+                      <li class="
+                      calculator__form-select-option product-type__options" data-value="Тип 4">Тип 4</li>
+                    </ul>
+                </div>
+              </div>
+              <!--^product_type_dropdown^-->
+              <!--city_of_dispatch-->
+              <div class="calculator__form-select-wrap">
+                <label class="label" for="issuance">Город отправки:</label>
+                <input id="city-of-dispatch-value" type="hidden" value="" form="delivery-calculator">
+                <div class="calculator__form-select city-of-dispatch">
+                  <div class="calculator__form-select-checked city-of-dispatch__value">Город</div>
+                  <ul id="city-of-dispatch" class="calculator__form-select-dropdown">
+                    <li class="
+                    calculator__form-select-option city-of-dispatch__options" data-value="Город 1">Город 1</li>
+                    <li class="
+                    calculator__form-select-option city-of-dispatch__options" data-value="Город 2">Город 2</li>
+                    <li class="
+                    calculator__form-select-option city-of-dispatch__options" data-value="Город 3">Город 3</li>
+                    <li class="
+                    calculator__form-select-option city-of-dispatch__options" data-value="Город 4">Город 4</li>
+                  </ul>
+                </div>
+              </div>
+              <!--^city_of_dispatch^-->
+              <div class="calculator__form-select-wrap">
+                <label class="label" for="delivery-type">Вариант доставки:</label>
+                <input id="delivery-type" type="text" form="delivery-calculator" placeholder="Авиа 7-10 дней">
+              </div>
+              <div class="calculator__form-product-dimensions-container">
+                <span class="label">Ввод данных:</span>
+                <div class="calculator__form-product-dimensions-row">
+                  <span class="label_primary">Габариты груза (см):</span>
+                  <div>
+                    <input class="dimensions" type="text" placeholder="Д-на">
+                    <span class="label_primary">X</span>
+                    <input class="dimensions" type="text" placeholder="Ш-на">
+                    <span class="label_primary">X</span>
+                    <input class="dimensions" type="text" placeholder="В-та">
+                  </div>
+                  <div>
+                    <label class="label_primary" for="mass">Вес:</label>
+                    <input type="text" id="mass" class="dimensions_primary">
+                    <label class="label_primary" for="volume">Объем:</label>
+                    <input type="text" id="volume" class="dimensions_primary">
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="calculator__submit-btn-wrap"> 
+              <button class="button calculator__submit-btn" type="submit" form="delivery-calculator">Рассчитать</button>
+            </div>
+        </fieldset>
+      </div>
+    </section>
+    <!--^Calculator^-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </main>
   <!-----^Main^----->
 </body>

@@ -1,0 +1,217 @@
+.calculator
+  height: 515px
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
+  &__inner
+    height: 425px
+    width: 1140px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+  &__logo-wrap
+    height: 100px
+    width: 100px
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    border: 1px solid $red
+    border-radius: 50px
+    margin: 0 10px
+  &__logo-position
+    text-align: center 
+  &__form
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-content: center
+    flex-wrap: wrap
+    &-border
+      height: 350px
+      border: 1px solid $red
+      padding: 0
+    &-select
+      display: inline
+      position: relative
+      cursor: pointer
+      height: 50px
+      width: 265px
+      border: 1px solid #C1C4C7 
+      z-index: 1
+      &-wrap
+        width: 275px
+        height: 75px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+      &-option
+        padding: 10px 0 10px 18px
+        color: #616467
+        transition: 0.2s
+        &:hover
+          background-color: #f0f3f7 
+          cursor: pointer
+      &-checked
+        z-index: -1
+        padding: 15px 0 17px 18px
+        +light
+        color: #616467
+        font-size: 13px
+      &-dropdown
+        position: absolute
+        list-style: none
+        width: inherit
+        top: 50px
+        padding: 0
+        margin: 0
+        left: -1px
+        background-color: #ffffff
+        border: 1px solid #c8cbcf 
+        +light
+        font-size: 13px
+        color: #3A3A3A
+        display: none
+        &-open
+          display: block
+    &-select::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 0
+      width: 40px
+      height: 100%
+      background-image: url('../img/caret.svg')
+      background-repeat: no-repeat
+      background-position: center
+      background-color: #F3F3F3
+      border-left: 1px solid #c8cbcf  
+    &-product-dimensions
+      &-container
+        height: 80px
+        width: inherit
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        margin-top: 25px
+      &-row
+        width: inherit
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+      &-row label:nth-of-type(1)
+        margin-left: 15px
+      &-row label:nth-of-type(2)
+        margin-left: 15px
+  &__submit-btn-wrap
+    display: flex
+    flex-direction: row
+    justify-content: center
+    position: relative
+    width: 183px
+    background-color: #ffff
+    bottom: 0px
+    margin: auto
+  
+#delivery-calculator
+  width: inherit
+  height: 210px
+  position: relative
+#delivery-type
+  width: 275px
+  +light
+  font-size: 13px
+  border: 1px solid #c8cbcf 
+  padding: 17px 113px 17px 17px
+#delivery-type:focus
+  outline: #c8cbcf
+  box-shadow: 0px 0px 4px 0px #c8cbcf
+
+
+@media ( max-width: 1173px )
+  .calculator
+    height: 650px
+    &__inner
+      height: 550px
+    &__logo-wrap
+      margin-bottom: 20px
+    &__form
+      align-content: space-between
+      &-product
+        &-dimensions
+          &-container
+            margin: 0
+      &-border
+        height: 460px
+      &-select-wrap:nth-child(4)
+        align-items: center
+    &__submit-btn-wrap
+      bottom: -5px
+  #delivery-calculator
+    height: 295px
+ 
+@media ( max-width: 780px)
+  .calculator
+    &__inner
+      height: 600px
+    &__form
+      &-border
+        height: 525px
+      &-product
+        &-dimensions
+          &-row
+            width: inherit
+            height: 120px
+            flex-wrap: wrap
+            align-content: space-between
+          &-container
+            height: 150px
+            width: 430px
+
+  #delivery-calculator
+    height: 355px
+
+@media ( max-width: 590px)
+  .calculator
+    height: 900px
+    &__inner
+      height: 850px
+    &__form
+      &-border
+        height: 770px
+  #delivery-calculator
+    height: 600px
+
+@media ( max-width: 490px)
+  .calculator
+    &__form
+      &-product
+        &-dimensions 
+          &-row
+            height: 170px
+            width: inherit
+          &-container
+            height: 200px
+            width: 360px
+      
+@media ( max-width: 490px)
+  .calculator
+    &__form
+      &-product
+        &-dimensions 
+          &-row div
+            width: 300px
+            display: flex
+            justify-content: space-between
+            align-items: center
+          &-container
+            width: 300px
+
+
+
+  
+  
