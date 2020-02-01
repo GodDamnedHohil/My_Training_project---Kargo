@@ -411,11 +411,18 @@ textarea {
     transition: 0.1s ease-in-out;
   }
   .header__china-delivery:active::before,
-  .header__china-delivery:active::after {
+  .header__china-delivery:focus::before,
+  .header__china-delivery:active::after,
+  .header__china-delivery:focus::after {
     -webkit-transform: scale(1);
             transform: scale(1);
     width: auto;
     opacity: 0.4;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .header__china-delivery:focus,
+  .header__china-delivery:active {
+    -webkit-tap-highlight-color: transparent;
   }
   iframe {
     width: 750px;
@@ -466,8 +473,8 @@ textarea {
     font-size: 14px;
   }
   .header__china-delivery {
-    height: 25px;
-    width: 25px;
+    height: 30px;
+    width: 30px;
   }
   .calculate-price-logo {
     height: 25px;

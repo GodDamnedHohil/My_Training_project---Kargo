@@ -135,10 +135,17 @@
         opacity: 0
         transition: 0.1s ease-in-out
   .header__china-delivery:active::before,
-  .header__china-delivery:active::after
+  .header__china-delivery:focus::before,
+  .header__china-delivery:active::after,
+  .header__china-delivery:focus::after
     transform: scale(1)
     width: auto
     opacity: 0.4
+    -webkit-tap-highlight-color: transparent
+  
+  .header__china-delivery:focus, 
+  .header__china-delivery:active
+    -webkit-tap-highlight-color: transparent
   iframe
     width: 750px
     height: 375px
@@ -179,7 +186,8 @@
       height: 30px
       font-size: 14px
     &__china-delivery
-      +icon-adaptive-mobile
+      height: 30px
+      width: 30px
   
   .calculate-price-logo 
     +icon-adaptive-mobile
