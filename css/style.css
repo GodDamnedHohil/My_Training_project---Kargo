@@ -137,6 +137,20 @@ textarea {
   transition: ease-in-out 0.3s;
 }
 
+.button:hover {
+  background: #ff6060;
+  cursor: pointer;
+}
+
+.button:active {
+  background: #ffffff;
+  color: #e93b3b;
+}
+
+.button:focus {
+  outline: none;
+}
+
 .dimensions {
   font-family: 'Open Sans Light';
   color: #616467;
@@ -346,23 +360,71 @@ textarea {
 
 @media (max-width: 1020px) {
   .header__button {
-    margin-right: 140px;
+    margin-right: 450px;
+  }
+  .header__china-delivery {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45px;
+    height: 45px;
+  }
+  .header__china-delivery::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: solid 1px #ffffff;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+  }
+  .header__china-delivery::after {
+    position: absolute;
+    content: '';
+    width: auto;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    border-bottom: solid 1px #ffffff;
+    -webkit-transform: translateX(50%);
+            transform: translateX(50%);
+    opacity: 0;
+    -webkit-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+  }
+  .header__china-delivery:active::before,
+  .header__china-delivery:active::after {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    width: auto;
+    opacity: 0.4;
   }
   iframe {
     width: 750px;
     height: 375px;
   }
-  .delivery-logo {
-    display: none;
-  }
-  .calculate-price-logo {
-    display: none;
-  }
-}
-
-@media (max-width: 780px) {
   .calculate-price-logo {
     display: inline;
+    position: relative;
+    margin: 0;
     height: 35px;
     width: 35px;
   }
@@ -370,27 +432,56 @@ textarea {
     display: none;
   }
   .delivery-logo {
+    position: relative;
     display: inline;
+    margin: 0;
     height: 35px;
     width: 35px;
   }
   .delivery-logo__text {
     display: none;
   }
+}
+
+@media (max-width: 780px) {
   .header__button {
-    margin-right: 140px;
+    margin-right: 260px;
+  }
+}
+
+@media (max-width: 590px) {
+  .header__button {
+    margin-right: 160px;
   }
 }
 
 @media (max-width: 490px) {
+  .header {
+    height: 45px;
+  }
   .header__button {
-    margin-right: 80px;
+    margin-right: 150px;
+    width: 105px;
+    height: 30px;
+    font-size: 14px;
+  }
+  .header__china-delivery {
+    height: 25px;
+    width: 25px;
+  }
+  .calculate-price-logo {
+    height: 25px;
+    width: 25px;
+  }
+  .delivery-logo {
+    height: 25px;
+    width: 25px;
   }
 }
 
 @media (max-width: 390px) {
   .header__button {
-    margin-right: 40px;
+    margin-right: 100px;
   }
 }
 
@@ -1103,7 +1194,6 @@ textarea {
   height: 50px;
   width: 265px;
   border: 1px solid #C1C4C7;
-  z-index: 1;
 }
 
 .calculator__form-select-wrap {
@@ -1134,7 +1224,7 @@ textarea {
 }
 
 .calculator__form-select-checked {
-  z-index: -1;
+  z-index: 0;
   padding: 15px 0 17px 18px;
   font-family: 'Open Sans Light';
   color: #616467;
@@ -1142,6 +1232,7 @@ textarea {
 }
 
 .calculator__form-select-dropdown {
+  z-index: 10;
   position: absolute;
   list-style: none;
   width: inherit;
