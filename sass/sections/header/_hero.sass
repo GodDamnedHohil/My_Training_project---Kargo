@@ -1,15 +1,3 @@
-#logo
-  &-bold
-    +bold-secondary
-    color: #ffffff
-    font-size: 27px
-    +uppercase
-  &-regular
-    +regular-secondary
-    color: #ffffff
-    font-size: 12px
-    +uppercase
-
 .hero
   height: 740px
   width: 100%
@@ -18,12 +6,7 @@
   background-size: cover
   background-position: 40%
   overflow-x: cut
-  &__nav-wrap
-    width: 100%
-    height: 80px
-    display: flex
-    flex-direction: row
-     //-------logo----------------
+  //-------logo----------------
   &__logo
     height: inherit
     width: 490px
@@ -36,7 +19,13 @@
     flex-direction: column
     align-items: flex-start
     justify-content: center
-    //---------navbar--------------
+  //---------navbar--------------
+  &__nav-wrap
+    width: 100%
+    height: 80px
+    display: flex
+    flex-direction: row
+    position: relative
   &__navbar
     width: 650px
     display: flex
@@ -61,6 +50,7 @@
     display: flex
     justify-content: center
     align-items: center
+    border-top: 1px solid rgba(255,255,255, 0.4)
   &__title
     +bold
     font-size: 48px
@@ -94,6 +84,7 @@
     +uppercase
     font-size: 14px
     color: #ffffff
+    //--inputs--
   &__input-container 
     display: flex
     flex-direction: column
@@ -120,6 +111,8 @@
     padding: 13px 114px 22px 20px
     line-height: 15px
     width: 273px
+    //--^ inputs ^--
+    //--button--
   &__form-button
     +semibold
     +uppercase
@@ -139,7 +132,144 @@
     color: #e93b3b
   &__form-button:focus
     outline: none
+    //--^ button ^--
+    
+//logo-text
+#logo
+  &-bold
+    +bold-secondary
+    color: #ffffff
+    font-size: 27px
+    +uppercase
+  &-regular
+    +regular-secondary
+    color: #ffffff
+    font-size: 12px
+    +uppercase
 
+@media ( min-width: 1174px )
+  .hero
+    perspective: 1000px
+    &__inner
+      width: 100%
+      height: 100%
+      transform-origin: right center
+      transition: 0.4s
+      //^ preset-for-rotate-animation ^
+  .sidebar
+    z-index: 10
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    align-items: center
+    position: absolute
+    left: 0
+    top: 0
+    width: 440px
+    height: 740px
+    background: rgba(37,51,60,0.4)
+    transition: 0.2s
+    transform: translateX(-100%)
+    &:target
+      transform: translateX(0)
+      //^ rotate animation ^
+    &__row
+      width: 300px
+      height: 60px
+      display: flex
+      flex-direction: row
+      justify-content: center
+      align-items: center
+      position: relative
+      cursor: pointer
+      &:hover svg rect
+        stroke: rgba(255,255,255,0.5)
+        stroke-width: 2
+        stroke-dasharray: 250, 110
+        stroke-dashoffset: -24
+      &:active svg rect
+        stroke-width: 1
+        stroke-dasharray: 400, 0
+        transition: step-end
+      &:active
+        background-color: rgba(255,255,255,0.3)
+        //^ links animation ^
+    &__title 
+      +bold
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 24px
+      color: #ffffff
+      height: 40px
+      text-transform: uppercase
+      &_news
+        +light
+        font-size: 20px
+        //^ title ^
+    &__links
+      text-decoration: none
+      +light
+      font-size: 20px
+      color: #ffffff
+      &-group
+        width: 380px
+        height: 550px
+        border: 1px solid #ffffff
+        border-radius: 2%
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        &:nth-child(5)
+          justify-content: space-between
+          //^ links ^
+  svg 
+    position: absolute
+    top: 0
+    left: 0
+
+  svg rect 
+    stroke: transparent
+    stroke-width: 1
+    transition: 0.8s 
+    stroke-dasharray: 400, 0
+    //^ links animation presets ^
+  .sidebar:target ~ .hero__inner 
+    transform: rotateY(-15deg)
+    //^ rotate value ^
+  .close-btn
+    position: absolute
+    top: 10px
+    left: 10px
+    color: #ffffff
+    font-size: 20px
+    text-decoration: none
+  .close-btn:hover
+    color: #e9e5e5
+    //^ close-btn ^
+@media (max-width: 1810px)
+  .sidebar:target ~ .hero__inner 
+    transform: rotateY(-20deg)
+    //^ rotate value ^
+@media (max-width: 1610px)
+  .sidebar:target ~ .hero__inner 
+    transform: rotateY(-25deg)
+    //^ rotate value ^
+@media (max-width: 1520px)
+  .sidebar:target ~ .hero__inner 
+    transform: rotateY(-30deg)
+    //^ rotate value ^
+@media (max-width: 1420px)
+  .sidebar:target ~ .hero__inner 
+    transform: rotateY(-40deg)
+    //^ rotate value ^
+@media (max-width: 1240px)
+  .sidebar:target ~ .hero__inner 
+    transform: rotateY(-45deg)
+    //^ rotate value ^
+
+    //adaptive for PC
 @media (max-width: 1173px)
   .hero
     height: 1140px
@@ -148,6 +278,8 @@
       display: flex
       flex-direction: column
       justify-content: space-around
+      //^ form&video container ^
+      //form----
     &__form-title
       display: flex
       flex-direction: row
@@ -172,9 +304,16 @@
       height: 75px
       width: 250px
       font-size: 16px
+      //^ form ^
     &__logo
       width: 330px
-
+      //sidebar
+  .sidebar
+    display: none
+    z-index: -1
+  .sidebar:target ~ .hero__inner 
+    transform: rotateY(0)
+    //^ sidebar disabled ^
 @media ( max-width: 1020px )
   .hero
     &__title
@@ -186,6 +325,8 @@
       flex-direction: row
       justify-content: center
 
+
+      //adaptive for tablets & phones
 @media (max-width: 780px)
   iframe
     width: 560px

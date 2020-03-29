@@ -1,6 +1,7 @@
 .header
   background: $dark-blue
   height: 45px
+  position: relative
   //---info---
   &__info
     width: 1140px
@@ -47,14 +48,14 @@
   &__button:focus
     outline: none
   //---links---
-  &__china-delivery
+  &__track-delivery
     display: block
     position: relative
     text-decoration: none
     color: $grey
     margin: auto 0
     cursor: pointer
-  &__china-delivery::after
+  &__track-delivery::after
     background-color: $grey
     display: block
     content: ""
@@ -64,9 +65,9 @@
     position: absolute
     transition: width .4s ease-in-out
     transform: translateX(-50%)
-  &__china-delivery:hover::after
+  &__track-delivery:hover::after
     width: 100%   
-  &__china-delivery:focus::after
+  &__track-delivery:focus::after
     width: 100%
 //---icons---
 .mobile-logo 
@@ -93,9 +94,9 @@
       display: none
     &__mobile
       display: none
-    &__china-delivery a:nth-of-type(1)
+    &__track-delivery a:nth-of-type(1)
       font-size: 20px
-    &__china-delivery a:nth-of-type(2)
+    &__track-delivery a:nth-of-type(2)
       font-size: 20px
 
 @media (max-width: 1020px)
@@ -103,7 +104,7 @@
     z-index: 1
     &__button
       margin-right: 450px
-    &__china-delivery
+    &__track-delivery
       z-index: 100
       display: flex
       flex-direction: row
@@ -112,13 +113,14 @@
       width: 45px
       height: 45px
 
-  .header__china-delivery:focus, 
-  .header__china-delivery:active
+  .header__track-delivery:focus, 
+  .header__track-delivery:active
     -webkit-tap-highlight-color: transparent
     background-color: rgba(242, 242, 242, 0.1)
 
-  .header__china-delivery::after
+  .header__track-delivery::after
     display: none
+    
   iframe
     width: 750px
     height: 375px
@@ -158,7 +160,7 @@
       width: 105px
       height: 30px
       font-size: 14px
-    &__china-delivery
+    &__track-delivery
       height: 30px
       width: 30px
   

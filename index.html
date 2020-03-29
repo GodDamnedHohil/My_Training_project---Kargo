@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
    <title>KARGO</title>
 </head>
 <body>
@@ -16,22 +16,226 @@
       <div class="container">
         <div class="header__info">
           <button class="header__button">translate</button>
-          <a class="header__china-delivery">
+          <!--^Translate__button^-->
+          <a class="header__track-delivery">
             <object type="image/svg+xml" data="img/wallet.svg" class="calculate-price-logo"></object>
             <span class="calculate-price-logo__text">Рассчитать доставку груза из Китая</span>
           </a>
-          <a href="#" class="header__china-delivery">
+          <!--^Calculate__delivery__link^-->
+          <a href="#" class="header__track-delivery">
             <object type="image/svg+xml" data="img/track.svg" class="delivery-logo"></object>
             <span class="delivery-logo__text">Проследить посылку из Китая</span>
           </a>
+          <!--^Track__delivery__link^-->          
           <span class="header__mobile"><object type="image/svg+xml" data="img/phone.svg" class="mobile-logo"></object>8 800 70 00 842</span>
           <span class="header__email"><object type="image/svg+xml" data="img/mail.svg" class="email-logo"></object>88007000842@1kargo.ru</span>
         </div>
       </div>
     </div>
     <!--^header_top^-->
+
     <!--Hero-->
     <div class="hero">
+      <!-- SIDEBARS -->
+      <!-- Main_page_info_sidebar -->
+      <div class="sidebar" id="main-page-info">
+        <a class="close-btn" href="#close">&times;</a>
+        <!--^close-button^-->
+        <span class="sidebar__title">Меню</span>
+        <!-- ^Title^ -->
+        <div class="sidebar__links-group ">
+          <!-- LINK_1 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/wallet.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Личный кабинет</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_2 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/Agent.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Агент в Китае</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_3 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/fire.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Горячие предложения</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_4 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/coupon.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Мои скидки</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_5 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/feedback.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Обратная связь</a class="sidebar__link"></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+        </div>
+      </div>
+      <!-- ^ Main_page_info_sidebar ^ -->
+      <!-- Delivery_info_sidebar -->
+      <div class="sidebar" id="delivery-info">
+        <a class="close-btn" href="#close">&times;</a>
+        <!--^close-button^-->
+        <span class="sidebar__title">О доставке</span>
+        <!--^ Title ^-->
+        <div class="sidebar__links-group">
+          <!-- LINK_1 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/payment.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Способы оплаты</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_2 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/travel-insurance.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Способы доставки</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_3 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/delivery-variant.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Выдача</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_4 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/tarifs.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Тарифы</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+        </div>
+      </div>
+      <!-- ^ Delivery_info_sidebar ^ -->
+      <!-- Info_sidebar -->
+      <div class="sidebar" id="info">
+        <a class="close-btn" href="#close">&times;</a>
+        <!--^close-button^-->
+        <span class="sidebar__title">Инфо</span>
+        <!-- ^ Title ^ -->
+        <div class="sidebar__links-group">
+          <!-- LINK_1 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/medal.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Наши преимущества</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_2 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/question.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Как мы работаем?</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_3 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/certificate.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Наши лицензии и оффис</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_4 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/team.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Наши менеджеры</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+          <!-- LINK_5 -->
+          <div class="sidebar__row">
+            <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg">
+              <rect x='0' y='0' fill='none' width='300' height='60'>
+            </svg>
+            <!-- ^ Border-svg ^ -->
+            <object class="icon" data="img/feedback-logo.svg" type="image/svg+xml"></object>
+            <!-- ^ logo ^ -->
+            <span><a class="sidebar__links" href="#">Отзывы</a></span>
+            <!-- ^ link ^ -->
+          </div>
+          <!------------>
+        </div>
+      </div>
+      <!-- ^Info_sidebar^ -->
+      <!-- ^ SIDEBARS ^ -->
       <div class="container hero__inner">
         <!--hero_navbar-->
         <div class="hero__nav-wrap">
@@ -43,18 +247,20 @@
             </div>
           </div>
           <nav class="hero__navbar">
-            <a href="#" class="hero__navbar-link">Главная<object data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#" class="hero__navbar-link">Доставка<object data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#" class="hero__navbar-link">Услуги в Китае<object data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#" class="hero__navbar-link">Инфо<object data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#" class="hero__navbar-link">Новости<object data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#" class="hero__navbar-link">Контакты<object data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <!-- links -->
+            <a href="#main-page-info" class="hero__navbar-link main-page-link">Главная<object id="arrow-1" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a href="#delivery-info" class="hero__navbar-link delivery-link">Доставка<object id="arrow-2" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a href="#china-service-info" class="hero__navbar-link">Услуги в Китае<object id="arrow-3" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a href="#info" class="hero__navbar-link info-link">Инфо<object id="arrow-4" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a href="#news-info" class="hero__navbar-link">Новости<object id="arrow-5" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a href="#contacts-info" class="hero__navbar-link">Контакты<object id="arrow-6" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
           </nav>
         </div>
         <!--^hero_navbar^-->
         <!--hero_main-->
         <div class="hero__title-wrap">
           <h1 class="hero__title">Перевозки из Китая в Россию!</h1>
+          <!-- ^ Hero_title ^ -->
         </div>
         <div class="container hero__main">
           <!--form-->
@@ -64,50 +270,77 @@
                 <span>Оставьте заявку</span>
                 <span>На расчет стоимости доставки</span>
               </div>
+              <!-- ^ title ^ -->
               <div class="hero__input-container">
                 <div class="hero__input-group">
                   <input form="application" class="hero__form-input" placeholder="Ваше имя..." type="text" required>
+                  <!-- ^ name_input ^ -->
                   <input form="application" class="hero__form-input" placeholder="Ваш телефон..." type="tel" required>
+                  <!-- ^ phone_input ^ -->
                   <input form="application" class="hero__form-input" placeholder="Ваш email..." type="email" required>
+                  <!-- ^ email_input ^ -->
                   <textarea form="application" class="hero__form-input" name="message" placeholder="Сообщение..." ></textarea>
+                  <!-- ^ comment_input ^ -->
                 </div>
                 <input type="submit" form="application" class="hero__form-button" value="Отправить заявку">
+                <!-- ^ confirm_button ^ -->
               </div>
             </form>
           </div>
-          <!--^form^-->
+          <!--^ form ^-->
           <iframe width="800" height="400" src="https://www.youtube.com/embed/qefc-24fpJA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <!-- ^ Video ^ -->
         </div>
       </div>
     </div>
     <!--^Hero^-->
   </header>
-  <!---------header--------------------------->
+  <!---------header--------------------->
   <!------Main------>
   <main>
     <!--Advantages-->
     <section class="advantages">
       <div class="container advantages__inner">
+        <!-- Block-1 -->
         <div class="advantages__block">
           <div class="advantages__logo-group"><img src="img/location.png" alt="location-logo" class="advantages__logos"></div>
+          <!-- ^ logo ^ -->
           <span class="advantages__title">Находимся в Китае</span>
+          <!-- ^ title ^ -->
           <p class="advantages__description">Это позволяет вести переговоры с поставщиками лично при встрече, а не по телефону</p>
+          <!-- ^ Description ^ -->
         </div>
+        <!------------>
+        <!-- Block-2 -->
         <div class="advantages__block">
           <div class="advantages__logo-group"><img src="img/Charter.png" alt="charter-logo" class="advantages__logos"></div>
+          <!-- ^ logo ^ -->
           <span class="advantages__title">Без посредников</span>
+          <!-- ^ title ^ -->
           <p class="advantages__description">Это положительно влияет на<br> стоимость товаров и скорость оформления заказа</p>
+          <!-- ^ Description ^ -->
         </div>
+        <!------------>
+        <!-- Block-3 -->
         <div class="advantages__block">
           <div class="advantages__logo-group"><img src="img/discount-logo.png" alt="discount-logo" class="advantages__logos"></div>
+          <!-- ^ logo ^ -->
           <span class="advantages__title">Система скидок</span>
+          <!-- ^ title ^ -->
           <p class="advantages__description">У нас сущесвует ситема скидок для постоянных клиентов, которые приятно удивят вас</p>
+          <!-- ^ Description ^ -->
         </div>
+        <!------------>
+        <!-- Block-4 -->
         <div class="advantages__block">
           <div class="advantages__logo-group"><img src="img/plane.png" alt="plane-logo" class="advantages__logos"></div>
+          <!-- ^ logo ^ -->
           <span class="advantages__title">Свой чартер</span>
+          <!-- ^ title ^ -->
           <p class="advantages__description">Это гарантия того, что ваш товар не "потеряется" и быстро будет доставлен Вам</p>
+          <!-- ^ Description ^ -->
         </div>
+        <!------------>
       </div>
     </section>
     <!--^Advantages^-->
@@ -120,9 +353,9 @@
           <legend class="calculator__logo-position">
             <div class="calculator__logo-wrap">
               <object data="img/calculator-logo.svg" type="image/svg+xml"></object>
+              <!--^logo^-->
             </div>
           </legend>
-          <!--^logo^-->
             <!--form-->
             <form action="#" id="delivery-calculator" class="calculator__form">
               <!--issuance_dropdown-->
@@ -246,6 +479,7 @@
     </section>
     <!--^Calculator^-->
     <script src="js/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
   </main>
   <!-----^Main^----->
