@@ -30,11 +30,23 @@
   &_primary
     width: 300px
     height: 60px
+    +light
+    color: #ffff
     background-color: transparent
     border: 1px solid #ffffff
     border-radius: 10px
+    font-size: 20px
+    transition: ease-in-out .3s
+    &:hover
+      background-color: #ffffff
+      color: #000000fd
+      cursor: pointer
+    &:active
+      background-color: #000000fd
+      color: #ffff
+    &:focus
+      outline: none
 
-  
 .dimensions
   +light
   color: #616467
@@ -59,6 +71,13 @@
     &:focus
       outline: none
       box-shadow: 0px 0px 4px 0px #c8cbcf
+  
+
+.decoration-line
+  width: 2px
+  height: 82px
+  background-color: $grey
+  z-index: 1
 
 @media ( max-width: 1020px )
   .dimensions

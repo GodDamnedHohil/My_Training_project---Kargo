@@ -22,7 +22,8 @@
     border-radius: 50px
     margin: 0 10px
   &__logo-position
-    text-align: center 
+    text-align: center
+    //^ logo ^ 
   &__form
     display: flex
     flex-direction: row
@@ -33,6 +34,7 @@
       height: 350px
       border: 1px solid $red
       padding: 0
+      //--dropdowns--
     &-select
       display: inline
       position: relative
@@ -117,7 +119,7 @@
     background-color: #ffff
     bottom: 0px
     margin: auto
-   
+    //^ submit button ^
 
 #delivery-calculator
   width: inherit
@@ -133,7 +135,7 @@
   outline: #c8cbcf
   box-shadow: 0px 0px 4px 0px #c8cbcf
 
-
+  //adaptive for PC
 @media ( max-width: 1173px )
   .calculator
     height: 650px
@@ -155,7 +157,8 @@
       bottom: -5px
   #delivery-calculator
     height: 295px
- 
+    
+  //Adaptive for tablets & phones
 @media ( max-width: 780px)
   .calculator
     &__inner
