@@ -76,6 +76,12 @@ $('.close-btn').on('click', function(){
 });
 //^ arrows animation ^
 
-
+$('.parallax-window').parallax({
+  imageSrc: 'img/plane-without-moving-parts.jpg',
+  naturalWidth: 1920,
+  naturalHeight: 1080,
+  bleed: 780,
+  speed: 0.2,
+});
 
   
