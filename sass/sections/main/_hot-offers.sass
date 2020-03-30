@@ -1,0 +1,102 @@
+.hot-offers
+  width: 100%
+  height: 680px
+  background-color: #f3f3f3
+  display: flex
+  justify-content: center
+  &__inner
+    width: 995px
+    height: inherit
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+  &__titles
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    height: 65px
+    width: 555px
+    &-container
+      height: 90px
+      width: inherit
+      display: flex
+      justify-content: center
+      align-items: baseline
+  &__title
+    display: flex
+    justify-content: center
+    margin-top: 0
+    height: 30px
+    +regular
+    color: #3a3a3a
+    font-size: 30px
+    &_primary
+      display: flex
+      justify-content: center
+      +light
+      color: #3f3f3f
+      font-size: 19px
+  &__forms-container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    height: 495px
+    width: inherit
+  &__form
+    width: 310px
+    height: 490px
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    align-items: center
+    &-comment
+      +light
+      font-size: 13px
+      &-wrap
+        text-align: center
+        width: 200px
+        height: 30px
+        margin-top: 10px
+  &__form-title
+    text-transform: uppercase
+    +bold
+    font-size: 16px
+    color: #fff
+    &-container
+      width: inherit
+      height: 65px
+      background-color: $dark-blue
+      display: flex 
+      justify-content: center
+      align-items: center
+  &__logo-wrap
+    height: 70px
+    width: inherit
+    display: flex
+    justify-content: center
+    align-items: center
+  &__description
+    display: flex
+    flex-direction: column
+    align-items: center
+    height: 50px
+    width: inherit
+    &_big
+      +semibold
+      font-size: 26px
+      color: #E93B3B
+    &_small
+      +semibold
+      font-size: 18px
+      text-transform: uppercase
+      color: #3a3a3a
+  &__inputs-container
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 135px
+    width: inherit
+    margin-top: 10px
+  
