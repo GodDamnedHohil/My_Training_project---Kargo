@@ -78,10 +78,8 @@ $('.close-btn').on('click', function(){
 
 $('.parallax-window').parallax({
   imageSrc: 'img/plane-without-moving-parts.jpg',
-  naturalWidth: 1920,
-  naturalHeight: 1080,
   bleed: 780,
-  speed: 0.2,
+  speed: 0.1
 });
 
   
