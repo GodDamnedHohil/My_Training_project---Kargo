@@ -1,0 +1,50 @@
+.china-agent
+  display: block
+  position: relative
+  height: 345px
+  background-image: url('../img/china-agent-bg.jpeg')
+  background-position: right 53%
+  z-index: 1
+  &::after
+    position: absolute
+    content: ''
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0, 0, 0, 0.3)
+    z-index: 2
+  &__inner
+    display: flex
+    align-items: flex-start
+    width: 935px
+    z-index: 3
+  &__content-wrap
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 330px
+    width: inherit
+    color: #ffff
+    z-index: 3
+  &__icon-wrap
+    z-index: 3
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100px
+    height: 100px
+    border: 1px solid #fff
+    border-radius: 50%
+  &__title
+    margin: 20px 0
+    font-size: 30px
+    +regular
+  &__description
+    font-size: 19px
+    +light
+    text-align: center
+    width: 100%
+   
+    
