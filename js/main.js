@@ -8,6 +8,7 @@ $('.city-of-dispatch').on('click', function() {
   $('#city-of-dispatch').toggleClass('calculator__form-select-dropdown-open')
 });
 //^ dropdown animation ^
+
 $('.issuance__options').on('click', function() {
   let value = $(this).attr('data-value');
   $('.issuance__value').text(value);
@@ -75,11 +76,56 @@ $('.close-btn').on('click', function(){
   $('#info').removeClass('info-active');
 });
 //^ arrows animation ^
+  
+let hotOffers = '.hot-offers';
+let expressDeliveryForm = '#express-delivery';
+let expressDeliveryContent = '.express-delivery-content';
+let groundDeliveryForm = '#ground-delivery';
+let groundDeliveryContent = '.ground-delivery-content';
+let shipDeliveryForm = '#ship-delivery';
+let shipDeliveryContent = '.ship-delivery-content';
+let openOffersCounter = 0; 
 
-$('.parallax-window').parallax({
-  imageSrc: 'img/plane-without-moving-parts.jpg',
-  bleed: 780,
-  speed: 0.1
+$('.express-delivery-title').on('click', function(){
+  openOffer(hotOffers, expressDeliveryForm, expressDeliveryContent);
+});
+$('.ground-delivery-title').on('click', function(){
+  openOffer(hotOffers, groundDeliveryForm, groundDeliveryContent);
+});
+$('.ship-delivery-title').on('click', function(){
+  openOffer(hotOffers, shipDeliveryForm, shipDeliveryContent);
 });
 
-  
+function openOffer(section, form, content){
+  if($(section).width() <= 1020){
+    if($(form).height() == 65){
+      $(content).removeClass('hidden');
+      $(form).toggleClass('hot-offers__form-open');
+      openOffersCounter++;
+
+    }
+    if($(form).height() == 490){
+      $(content).toggleClass('hidden');
+      $(form).removeClass('hot-offers__form-open');
+      openOffersCounter--;
+    }
+    if(openOffersCounter == 0) {
+      $(section).removeClass('hot-offers_once-open');
+      $(section).removeClass('hot-offers_twice-open');
+      $(section).removeClass('hot-offers_tree-times-open');
+    }
+    if(openOffersCounter == 1) $(section).toggleClass('hot-offers_once-open');
+    if(openOffersCounter == 2) $(section).toggleClass('hot-offers_twice-open');
+    if(openOffersCounter == 3) $(section).toggleClass('hot-offers_tree-times-open');
+  }
+
+}
+
+
+
+
+
+
+
+
+

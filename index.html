@@ -492,20 +492,20 @@
         <div class="hot-offers__forms-container">
           <!-- form_1 -->
           <form id="express-delivery" action="#" class="hot-offers__form">
-            <div class="hot-offers__form-title-container">
+            <div class="hot-offers__form-title-container express-delivery-title">
               <span class="hot-offers__form-title">Экспресс доставка</span>
             </div>
             <!-- ^ title ^ -->
-            <div class="hot-offers__logo-wrap">
+            <div class="hot-offers__logo-wrap express-delivery-content hidden">
               <img src="img/plane.png" alt="plane">
               <!-- ^ logo ^ -->
             </div>
-            <div class="hot-offers__description">
+            <div class="hot-offers__description express-delivery-content hidden">
               <span class="hot-offers__description_small">За 9 дней из Гуанчжоу</span>
               <span class="hot-offers__description_big">9$-1кг</span>
               <!-- ^ description ^ -->
             </div>
-            <div class="hot-offers__inputs-container"> 
+            <div class="hot-offers__inputs-container express-delivery-content hidden"> 
               <input form="express-delivery" class="input" placeholder="Ваше имя..." type="text" required>
               <!-- ^ name_input ^ -->
               <input form="express-delivery" class="input" placeholder="Ваш телефон..." type="tel" required>
@@ -513,8 +513,8 @@
               <input form="express-delivery" class="input" placeholder="Ваш email..." type="email" required>
               <!-- ^ email_input ^ -->
             </div>
-            <input type="submit" form="express-delivery" class="button" value="Отправить заявку">
-            <div class="hot-offers__form-comment-wrap">
+            <input type="submit" form="express-delivery" class="button express-delivery-content hidden" value="Отправить заявку">
+            <div class="hot-offers__form-comment-wrap express-delivery-content hidden">
               <span class="hot-offers__form-comment">Наш менеджер перезвонит Вам в ближайшее время</span>
               <!-- ^ comment ^ -->
             </div>
@@ -522,20 +522,20 @@
           <!------------>
           <!-- form_2 -->
           <form id="ground-delivery" action="#" class="hot-offers__form">
-            <div class="hot-offers__form-title-container">
+            <div class="hot-offers__form-title-container ground-delivery-title">
               <span class="hot-offers__form-title">Авто-Ж.Д. доставка</span>
             </div>
             <!-- ^ title ^ -->
-            <div class="hot-offers__logo-wrap">
+            <div class="hot-offers__logo-wrap ground-delivery-content hidden">
               <img src="img/plane.png" alt="plane">
               <!-- ^ logo ^ -->
             </div>
-            <div class="hot-offers__description">
+            <div class="hot-offers__description ground-delivery-content hidden">
               <span class="hot-offers__description_small">За 18 дней из Гуанчжоу</span>
               <span class="hot-offers__description_big">3$-1кг</span>
               <!-- ^ description ^ -->           
             </div>
-            <div class="hot-offers__inputs-container"> 
+            <div class="hot-offers__inputs-container ground-delivery-content hidden"> 
               <input form="ground-delivery" class="input" placeholder="Ваше имя..." type="text" required>
               <!-- ^ name_input ^ -->
               <input form="ground-delivery" class="input" placeholder="Ваш телефон..." type="tel" required>
@@ -543,8 +543,8 @@
               <input form="ground-delivery" class="input" placeholder="Ваш email..." type="email" required>
               <!-- ^ email_input ^ -->
             </div>
-            <input type="submit" form="ground-delivery" class="button" value="Отправить заявку">
-            <div class="hot-offers__form-comment-wrap">
+            <input type="submit" form="ground-delivery" class="button ground-delivery-content hidden" value="Отправить заявку">
+            <div class="hot-offers__form-comment-wrap ground-delivery-content hidden">
               <span class="hot-offers__form-comment">Наш менеджер перезвонит Вам в ближайшее время</span>
               <!-- ^ comment ^ -->
             </div>
@@ -552,20 +552,20 @@
           <!------------>
           <!-- form_3 -->
           <form id="ship-delivery" action="#" class="hot-offers__form">
-            <div class="hot-offers__form-title-container">
+            <div class="hot-offers__form-title-container ship-delivery-title">
               <span class="hot-offers__form-title">Доставка морем</span>
             </div>
             <!-- ^ title ^ -->
-            <div class="hot-offers__logo-wrap">
+            <div class="hot-offers__logo-wrap ship-delivery-content hidden">
               <img src="img/plane.png" alt="plane">
               <!-- ^ logo ^ -->
             </div>
-            <div class="hot-offers__description">
+            <div class="hot-offers__description ship-delivery-content hidden">
               <span class="hot-offers__description_small">За 35 дней из Гуанчжоу</span>
               <span class="hot-offers__description_big">2$-1кг</span>
               <!-- ^ description ^ -->
             </div>
-            <div class="hot-offers__inputs-container"> 
+            <div class="hot-offers__inputs-container ship-delivery-content hidden"> 
               <input form="ship-delivery" class="input" placeholder="Ваше имя..." type="text" required>
               <!-- ^ name_input ^ -->
               <input form="ship-delivery" class="input" placeholder="Ваш телефон..." type="tel" required>
@@ -573,8 +573,8 @@
               <input form="ship-delivery" class="input" placeholder="Ваш email..." type="email" required>
               <!-- ^ email_input ^ -->
             </div>
-            <input type="submit" form="ship-delivery" class="button" value="Отправить заявку">
-            <div class="hot-offers__form-comment-wrap">
+            <input type="submit" form="ship-delivery" class="button ship-delivery-content hidden" value="Отправить заявку">
+            <div class="hot-offers__form-comment-wrap ship-delivery-content hidden">
               <span class="hot-offers__form-comment">Наш менеджер перезвонит Вам в ближайшее время</span>
               <!-- ^ comment ^ -->
             </div>
@@ -597,13 +597,12 @@
           <span class="china-agent__description">Русскоговорящие представители компании без труда найдут именно тот товар, который будет отвечать</span>
           <span class="china-agent__description">Вашим запросам как по качеству, так и по цене.</span>
         </div>
-        
       </div>
     </section>
     <!-- ^ China agent ^ -->
+    <section style="height: 1000px;"></section>
+
     <script src="js/jquery.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="js/slick.js"></script>
     <script src="js/main.js"></script>
   </main>
   <!-----^Main^----->

@@ -1477,6 +1477,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 1.3s;
 }
 
 .hot-offers__description {
@@ -1512,7 +1513,17 @@ textarea {
 
 @media (max-width: 1020px) {
   .hot-offers {
-    height: 1250px;
+    height: 500px;
+    transition: 2s;
+  }
+  .hot-offers_once-open {
+    height: 990px;
+  }
+  .hot-offers_twice-open {
+    height: 1480px;
+  }
+  .hot-offers_tree-times-open {
+    height: 1970px;
   }
   .hot-offers__inner {
     width: inherit;
@@ -1520,6 +1531,17 @@ textarea {
   .hot-offers__titles-container {
     height: 200px;
     align-items: center;
+  }
+  .hot-offers__titles {
+    height: 180px;
+    justify-content: center;
+  }
+  .hot-offers__title {
+    height: 80px;
+    text-align: center;
+  }
+  .hot-offers__title_primary {
+    text-align: center;
   }
   .hot-offers__forms-container {
     display: flex;
@@ -1532,28 +1554,17 @@ textarea {
   .hot-offers__form {
     display: flex;
     flex-wrap: wrap;
-    margin: 20px 20px;
-  }
-}
-
-@media (max-width: 780px) {
-  .hot-offers {
-    height: 1800px;
-  }
-  .hot-offers__form {
+    height: 65px;
     width: inherit;
     margin: 10px 0;
+    transition: 1.5s;
+    overflow: hidden;
   }
-  .hot-offers__titles {
-    height: 180px;
-    justify-content: center;
+  .hot-offers__form-open {
+    height: 490px;
   }
-  .hot-offers__title {
-    height: 80px;
-    text-align: center;
-  }
-  .hot-offers__title_primary {
-    text-align: center;
+  .hidden {
+    display: none;
   }
 }
 

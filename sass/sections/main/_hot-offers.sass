@@ -76,6 +76,7 @@
     display: flex
     justify-content: center
     align-items: center
+    transition: 1.3s
   &__description
     display: flex
     flex-direction: column
@@ -99,16 +100,31 @@
     height: 135px
     width: inherit
     margin-top: 10px
-  
+
 
 @media ( max-width: 1020px )
   .hot-offers
-    height: 1250px
+    height: 500px
+    transition: 2s
+    &_once-open
+      height: 990px
+    &_twice-open
+      height: 1480px
+    &_tree-times-open
+      height: 1970px
     &__inner
       width: inherit
     &__titles-container
       height: 200px
       align-items: center
+    &__titles
+      height: 180px
+      justify-content: center
+    &__title
+      height: 80px
+      text-align: center
+      &_primary
+        text-align: center
     &__forms-container
       display: flex
       align-content: center
@@ -119,20 +135,20 @@
     &__form
       display: flex
       flex-wrap: wrap
-      margin: 20px 20px
-    
-      
-@media ( max-width: 780px )
-  .hot-offers
-    height: 1800px
-    &__form
+      height: 65px
       width: inherit
       margin: 10px 0
-    &__titles
-      height: 180px
-      justify-content: center
-    &__title
-      height: 80px
-      text-align: center
-      &_primary
-        text-align: center
+      transition: 1.5s
+      overflow: hidden
+      &-open
+        height: 490px
+
+  .hidden
+    display: none
+    
+  
+  
+    
+      
+
+    
