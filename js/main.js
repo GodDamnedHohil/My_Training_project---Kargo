@@ -97,14 +97,17 @@ $('.ship-delivery-title').on('click', function(){
 });
 
 function openOffer(section, form, content){
-  if($(section).width() <= 1020){
-    if($(form).height() == 65){
+  let closeFlag;
+  let openFlag;
+  ($(form).height() == 65) ? closeFlag = 1 : ($(form).height() == 490) ? closeFlag = 0 : closeFlag = -1;
+  
+  if($(section).width() <= 1020 & closeFlag != -1){
+    if(closeFlag == 1){
       $(content).removeClass('hidden');
       $(form).toggleClass('hot-offers__form-open');
       openOffersCounter++;
-
     }
-    if($(form).height() == 490){
+    if(closeFlag == 0){
       $(content).toggleClass('hidden');
       $(form).removeClass('hot-offers__form-open');
       openOffersCounter--;
