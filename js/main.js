@@ -29,53 +29,30 @@ $('.city-of-dispatch__options').on('click', function() {
 });
 //^ dropdown data changes ^
 
-//arrows animation
-$('.hero__navbar-link').on('click', function (){
-  if ($('#main-page-info').hasClass('main-page-info-active')){
-    $('#main-page-info').removeClass('main-page-info-active');
-  };
-  if ($('#delivery-info').hasClass('delivery-info-active')){
-    $('#delivery-info').removeClass('delivery-info-active');
-  };
-  if ($('#info').hasClass('info-active')){
-    $('#info').removeClass('info-active');
-  };
-});
-
-$('.main-page-link').on('click', function() {
+//arrows animation-----------------------------
+$('.hero__navbar-link').on('click', function(){
   $('.arrow').removeClass('arrow_active');
-  $('#main-page-info').removeClass('main-page-info-active');
-  $('#main-page-info').toggleClass('main-page-info-active');
-  if ($('#main-page-info').hasClass('main-page-info-active')){
-    $('#arrow-1').toggleClass('arrow_active');
-  };
-});
-
-$('.delivery-link').on('click', function() {
-  $('.arrow').removeClass('arrow_active');
-  $('#delivery-info').removeClass('delivery-info-active');
-  $('#delivery-info').toggleClass('delivery-info-active');
-  if ($('#delivery-info').hasClass('delivery-info-active')){
-    $('#arrow-2').toggleClass('arrow_active');
-  };
-});
-
-$('.info-link').on('click', function() {
-  $('.arrow').removeClass('arrow_active');
-  $('#info').removeClass('info-active');
-  $('#info').toggleClass('info-active');
-  if ($('#info').hasClass('info-active')){
-    $('#arrow-4').toggleClass('arrow_active');
-  };
-});
+})
 
 $('.close-btn').on('click', function(){
   $('.arrow').removeClass('arrow_active');
-  $('#main-page-info').removeClass('main-page-info-active');
-  $('#delivery-info').removeClass('delivery-info-active');
-  $('#info').removeClass('info-active');
-});
-//^ arrows animation ^
+})
+
+$('.main-page-link').on('click', function(){
+  pinArrow('#arrow-1');
+})
+
+$('.delivery-link').on('click', function(){
+  pinArrow('#arrow-2');
+})
+
+$('.info-link').on('click', function(){
+  pinArrow('#arrow-4');
+})
+function pinArrow(arrow){
+  $(arrow).toggleClass('arrow_active');
+}
+//^ arrows animation ^-----------------------
   
 let hotOffers = '.hot-offers';
 let expressDeliveryForm = '#express-delivery';
