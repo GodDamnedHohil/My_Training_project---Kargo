@@ -1744,4 +1744,16 @@ textarea {
   text-align: center;
   width: 100%;
 }
+
+@media (max-width: 780px) {
+  .china-agent__description {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 780px) {
+  .china-agent__description {
+    font-size: 13px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
