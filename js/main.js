@@ -11,29 +11,31 @@ $('.city-of-dispatch').on('click', function() {
 
 $('.issuance__options').on('click', function() {
   let value = $(this).attr('data-value');
-  $('.issuance__value').text(value);
-  $('#issuance__data').val(value);
-  console.log($('#issuance__data').val());
+  changeDropdownData(value,'.issuance__value', '#issuance__data');
 });
 $('.product-type__options').on('click', function() {
   let value = $(this).attr('data-value');
-  $('.product-type__value').text(value);
-  $('#product-type__data').val(value);
-  console.log($('#product-type__data').val())
+  changeDropdownData(value, '.product-type__value', '#product-type__data');
 });
 $('.city-of-dispatch__options').on('click', function() {
   let value = $(this).attr('data-value');
-  $('.city-of-dispatch__value').text(value);
-  $('#city-of-dispatch__data').val(value);
-  console.log($('#city-of-dispatch__data').val())
+  changeDropdownData(value, '.city-of-dispatch__value', '#city-of-dispatch__data');
 });
+
+function changeDropdownData(value, text, data){
+  $(text).text(value);
+  $(data).val(value);
+  console.log($(data).val());
+}
 //^ dropdown data changes ^
 
 //arrows animation-----------------------------
+$('.sidebar__links').on('click', function(){
+  $('.arrow').removeClass('arrow_active');
+})
 $('.hero__navbar-link').on('click', function(){
   $('.arrow').removeClass('arrow_active');
 })
-
 $('.close-btn').on('click', function(){
   $('.arrow').removeClass('arrow_active');
 })
@@ -41,11 +43,9 @@ $('.close-btn').on('click', function(){
 $('.main-page-link').on('click', function(){
   pinArrow('#arrow-1');
 })
-
 $('.delivery-link').on('click', function(){
   pinArrow('#arrow-2');
 })
-
 $('.info-link').on('click', function(){
   pinArrow('#arrow-4');
 })
