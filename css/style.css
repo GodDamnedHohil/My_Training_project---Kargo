@@ -1848,6 +1848,10 @@ textarea {
   color: #e93b3e;
 }
 
+.advantages-list__row-title-left {
+  text-align: right;
+}
+
 .advantages-list__row-title-wrap {
   display: flex;
   align-items: baseline;
@@ -1892,5 +1896,118 @@ textarea {
   align-items: center;
   width: 100px;
   height: 100%;
+}
+
+@media (max-width: 1173px) {
+  .advantages-list__right-list {
+    width: 480px;
+  }
+  .advantages-list__left-list {
+    width: 480px;
+  }
+  .advantages-list__text-container {
+    width: 380px;
+  }
+  .advantages-list__row-title-wrap {
+    height: 20px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .advantages-list__right-list {
+    width: 360px;
+  }
+  .advantages-list__left-list {
+    width: 360px;
+  }
+  .advantages-list__text-container {
+    width: 300px;
+  }
+  .advantages-list__logo {
+    width: 50px;
+    height: 50px;
+  }
+  .advantages-list__row {
+    height: 50px;
+  }
+  .advantages-list__row-title {
+    font-size: 12px;
+  }
+  .advantages-list__row-description {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 780px) {
+  .advantages-list__right-list {
+    width: 265px;
+  }
+  .advantages-list__left-list {
+    width: 265px;
+  }
+  .advantages-list__text-container {
+    width: 205px;
+  }
+  .advantages-list__row {
+    height: 55px;
+  }
+  .advantages-list__row-title {
+    font-size: 10px;
+  }
+  .advantages-list__row-title-wrap {
+    height: 25px;
+  }
+  .advantages-list__row-description {
+    font-size: 10px;
+  }
+  .advantages-list__logo {
+    height: 45px;
+    width: 45px;
+  }
+}
+
+@media (max-width: 590px) {
+  .advantages-list__right-list {
+    width: 215px;
+  }
+  .advantages-list__left-list {
+    width: 215px;
+  }
+  .advantages-list__text-container {
+    width: 155px;
+  }
+}
+
+@media (max-width: 490px) {
+  .advantages-list__right-list {
+    width: 165px;
+  }
+  .advantages-list__left-list {
+    width: 165px;
+  }
+  .advantages-list__logo {
+    display: none;
+  }
+  .advantages-list__logo-container {
+    display: none;
+  }
+  .advantages-list__text-container {
+    width: 160px;
+  }
+  .advantages-list__numeration {
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 390px) {
+  .advantages-list__right-list {
+    width: 135px;
+  }
+  .advantages-list__left-list {
+    width: 135px;
+  }
+  .advantages-list__text-container {
+    width: 130px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

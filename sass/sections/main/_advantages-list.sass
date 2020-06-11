@@ -65,6 +65,8 @@
       +bold
       font-size: 14px
       color: #e93b3e
+      &-left
+        text-align: right
       &-wrap
         display: flex
         align-items: baseline
@@ -96,3 +98,81 @@
       width: 100px
       height: 100%
   
+@media (max-width: 1173px)
+  .advantages-list
+    &__right-list
+      width: 480px
+    &__left-list
+      width: 480px
+    &__text-container
+      width: 380px
+    &__row
+      &-title
+        &-wrap
+          height: 20px
+@media (max-width: 1020px)
+  .advantages-list
+    &__right-list
+      width: 360px
+    &__left-list
+      width: 360px
+    &__text-container
+      width: 300px
+    &__logo
+      width: 50px
+      height: 50px
+    &__row
+      height: 50px
+      &-title
+        font-size: 12px
+      &-description
+        font-size: 11px
+@media (max-width: 780px)
+  .advantages-list
+    &__right-list
+      width: 265px
+    &__left-list
+      width: 265px
+    &__text-container
+      width: 205px
+    &__row
+      height: 55px
+      &-title
+        font-size: 10px
+        &-wrap
+          height: 25px
+      &-description
+        font-size: 10px
+    &__logo
+      height: 45px
+      width: 45px
+@media (max-width: 590px)
+  .advantages-list
+    &__right-list
+      width: 215px
+    &__left-list
+      width: 215px
+    &__text-container
+      width: 155px
+@media (max-width: 490px)
+  .advantages-list
+    &__right-list
+      width: 165px
+    &__left-list
+      width: 165px
+    &__logo
+      display: none
+      &-container
+        display: none
+    &__text-container
+      width: 160px
+    &__numeration
+      margin: 0 5px
+@media (max-width: 390px)
+  .advantages-list
+    &__right-list
+      width: 135px
+    &__left-list
+      width: 135px
+    &__text-container
+      width: 130px
