@@ -1,0 +1,98 @@
+.advantages-list
+  height: 630px
+  background-color: #f3f3f3
+  display: flex
+  align-items: center
+  &__inner
+    width: 100%
+    height: 540px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__headers
+    &-container
+      display: flex
+      justify-content: center
+      height: 90px
+    &-wrap
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      width: 300px
+      height: 60px
+      text-align: center
+  &__header
+    &-primary
+      +regular
+      font-size: 30px
+      color: #3a3a3a
+      height: 30px
+    &-secondary
+      +light
+      font-size: 19px
+      color: #3f3f3f
+      height: 19px
+  &__main-container
+    display: flex
+    height: 450px
+    width: 100%
+  &__numeration
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 100%
+    width: 30px
+  &__num-svg
+    height: 420px
+  &__left-list
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 555px
+    height: 100%
+  &__right-list
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    width: 555px
+    height: 100%
+  &__row
+    display: flex
+    align-items: center
+    height: 60px
+    width: 100%
+    &-title
+      +bold
+      font-size: 14px
+      color: #e93b3e
+      &-wrap
+        display: flex
+        align-items: baseline
+        height: 30px
+        width: 100%
+        &-left
+          justify-content: flex-end
+    &-description
+      width: 445px
+      +light
+      font-size: 13px
+      margin: 0
+      &-wrap
+        display: flex
+        height: 30px
+        &-left
+          justify-content: flex-end
+          text-align: right        
+  &__text-container
+    width: 100%
+    height: 100%
+  &__logo
+    height: 60px
+    width: 60px
+    &-container
+      display: flex
+      justify-content: center
+      align-items: center
+      width: 100px
+      height: 100%
+  

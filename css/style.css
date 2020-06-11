@@ -1756,4 +1756,141 @@ textarea {
     font-size: 13px;
   }
 }
+
+.advantages-list {
+  height: 630px;
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+}
+
+.advantages-list__inner {
+  width: 100%;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.advantages-list__headers-container {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+}
+
+.advantages-list__headers-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 300px;
+  height: 60px;
+  text-align: center;
+}
+
+.advantages-list__header-primary {
+  font-family: 'Open Sans Regular';
+  font-size: 30px;
+  color: #3a3a3a;
+  height: 30px;
+}
+
+.advantages-list__header-secondary {
+  font-family: 'Open Sans Light';
+  font-size: 19px;
+  color: #3f3f3f;
+  height: 19px;
+}
+
+.advantages-list__main-container {
+  display: flex;
+  height: 450px;
+  width: 100%;
+}
+
+.advantages-list__numeration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 30px;
+}
+
+.advantages-list__num-svg {
+  height: 420px;
+}
+
+.advantages-list__left-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 555px;
+  height: 100%;
+}
+
+.advantages-list__right-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 555px;
+  height: 100%;
+}
+
+.advantages-list__row {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+.advantages-list__row-title {
+  font-family: 'Open Sans Bold';
+  font-size: 14px;
+  color: #e93b3e;
+}
+
+.advantages-list__row-title-wrap {
+  display: flex;
+  align-items: baseline;
+  height: 30px;
+  width: 100%;
+}
+
+.advantages-list__row-title-wrap-left {
+  justify-content: flex-end;
+}
+
+.advantages-list__row-description {
+  width: 445px;
+  font-family: 'Open Sans Light';
+  font-size: 13px;
+  margin: 0;
+}
+
+.advantages-list__row-description-wrap {
+  display: flex;
+  height: 30px;
+}
+
+.advantages-list__row-description-wrap-left {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.advantages-list__text-container {
+  width: 100%;
+  height: 100%;
+}
+
+.advantages-list__logo {
+  height: 60px;
+  width: 60px;
+}
+
+.advantages-list__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100%;
+}
 /*# sourceMappingURL=style.css.map */
