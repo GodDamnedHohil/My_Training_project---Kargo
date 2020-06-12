@@ -100,12 +100,23 @@ function openOffer(section, form, content){
   }
 
 }
+$('.reviews__slider-img-container').slick({
+  arrows: true,
+  fade: true,
+  cssEase: 'linear',
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  nextArrow: $('.next-arrow'),
+  prevArrow: $('.prev-arrow'),
+  asNavFor: '.reviews__slider-bottom-container'
+});
 
-
-
-
-
-
-
-
-
+$('.reviews__slider-bottom-container').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  infinite: true,
+  asNavFor: '.reviews__slider-img-container',
+  fade: true,
+  cssEase: 'linear',
+})
