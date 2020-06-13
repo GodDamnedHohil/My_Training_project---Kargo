@@ -1689,6 +1689,7 @@ textarea {
   height: 345px;
   background-image: url("../img/china-agent-bg.jpeg");
   background-position: right 53%;
+  background-repeat: no-repeat;
   z-index: 1;
 }
 
@@ -2016,6 +2017,7 @@ textarea {
   align-items: center;
   height: 555px;
   width: 100%;
+  overflow-x: hidden;
 }
 
 .reviews__inner {
@@ -2219,6 +2221,117 @@ textarea {
   }
   .reviews__slider-bottom-container {
     height: 400px;
+  }
+}
+
+.managers-ad {
+  display: block;
+  position: relative;
+  height: 345px;
+  background: url("../img/manager-ad_bg.jpeg");
+  background-position: 26% 4%;
+  background-cover: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.managers-ad::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(1, 2, 46, 0.5);
+  z-index: 2;
+}
+
+.managers-ad__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 935px;
+  z-index: 3;
+}
+
+.managers-ad__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 160px;
+  width: 100%;
+}
+
+.managers-ad__logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  z-index: 3;
+}
+
+.managers-ad__text-container {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 100%;
+  z-index: 3;
+}
+
+.managers-ad__title {
+  font-family: 'Open Sans Regular';
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.managers-ad__title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 50px;
+  width: 100%;
+}
+
+.managers-ad__description {
+  height: 45px;
+  margin: 0;
+  font-family: 'Open Sans Light';
+  font-size: 19px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.managers-ad__description-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60px;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .managers-ad__description {
+    font-size: 15px;
+  }
+  .managers-ad__text-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 780px) {
+  .managers-ad__description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 390px) {
+  .managers-ad__title-wrap {
+    height: 80px;
+  }
+  .managers-ad__description-wrap {
+    height: 70px;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
+// dropdowns------------------------------------------------------------
 $('.issuance').on('click', function() {
   $('#issuance').toggleClass('calculator__form-select-dropdown-open')
 });
@@ -29,7 +30,9 @@ function changeDropdownData(value, text, data){
 }
 //^ dropdown data changes ^
 
-//arrows animation-----------------------------
+//^ dropdowns ^---------------------------------------------------------------
+
+// arrows animation-----------------------------
 $('.sidebar__links').on('click', function(){
   $('.arrow').removeClass('arrow_active');
 })
@@ -53,7 +56,8 @@ function pinArrow(arrow){
   $(arrow).toggleClass('arrow_active');
 }
 //^ arrows animation ^-----------------------
-  
+
+// forms close / open animation------------------------------
 let hotOffers = '.hot-offers';
 let expressDeliveryForm = '#express-delivery';
 let expressDeliveryContent = '.express-delivery-content';
@@ -100,6 +104,9 @@ function openOffer(section, form, content){
   }
 
 }
+// forms close / open animation--------------------------------------------------------
+
+// slider-------------------------------------
 $('.reviews__slider-img-container').slick({
   arrows: true,
   fade: true,
@@ -120,3 +127,5 @@ $('.reviews__slider-bottom-container').slick({
   fade: true,
   cssEase: 'linear',
 })
+// slider----------------------------------------
+
