@@ -2230,7 +2230,7 @@ textarea {
   height: 345px;
   background: url("../img/manager-ad_bg.jpeg");
   background-position: 26% 4%;
-  background-cover: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -2365,7 +2365,7 @@ textarea {
   width: 100%;
 }
 
-.delivery-types__form {
+.delivery-types__block {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -2374,7 +2374,7 @@ textarea {
   border: 1px solid #c4c7ca;
 }
 
-.delivery-types__form-container {
+.delivery-types__block-container {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -2383,7 +2383,7 @@ textarea {
   padding-bottom: 20px;
 }
 
-.delivery-types__form-title {
+.delivery-types__block-title {
   font-family: 'Open Sans Bold';
   color: #ffffff;
   font-size: 16px;
@@ -2391,7 +2391,7 @@ textarea {
   text-transform: uppercase;
 }
 
-.delivery-types__form-title-wrap {
+.delivery-types__block-title-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2400,12 +2400,12 @@ textarea {
   background: #25333c;
 }
 
-.delivery-types__form-logo {
+.delivery-types__block-logo {
   width: 100%;
   height: 100%;
 }
 
-.delivery-types__form-logo-wrap {
+.delivery-types__block-logo-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2413,14 +2413,14 @@ textarea {
   height: 75px;
 }
 
-.delivery-types__form-text {
+.delivery-types__block-text {
   font-family: 'Open Sans Semibold';
   color: #3a3a3a;
   font-size: 24px;
   text-align: center;
 }
 
-.delivery-types__form-text-container {
+.delivery-types__block-text-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2428,7 +2428,10 @@ textarea {
   width: 100%;
 }
 
-.delivery-types__form-button {
+.delivery-types__block-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 45px;
   background: #ffffff;
@@ -2438,11 +2441,12 @@ textarea {
   color: #e93b3b;
   font-size: 12px;
   text-align: center;
+  text-decoration: none;
   text-transform: uppercase;
   transition: .2s;
 }
 
-.delivery-types__form-button:hover {
+.delivery-types__block-button:hover {
   background: #e93b3b;
   color: #ffffff;
   cursor: pointer;
@@ -2450,12 +2454,12 @@ textarea {
   transition: .2s;
 }
 
-.delivery-types__form-button:active {
+.delivery-types__block-button:active {
   background: #ca0000d5;
   transition: .3s;
 }
 
-.delivery-types__form-button-container {
+.delivery-types__block-button-container {
   display: flex;
   justify-content: center;
   align-items: flex-end;
