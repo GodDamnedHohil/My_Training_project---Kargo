@@ -58,28 +58,28 @@ function pinArrow(arrow){
 //^ arrows animation ^-----------------------
 
 // forms close / open animation------------------------------
-let hotOffers = '.hot-offers';
-let expressDeliveryForm = '#express-delivery';
-let expressDeliveryContent = '.express-delivery-content';
-let groundDeliveryForm = '#ground-delivery';
-let groundDeliveryContent = '.ground-delivery-content';
-let shipDeliveryForm = '#ship-delivery';
-let shipDeliveryContent = '.ship-delivery-content';
-let openOffersCounter = 0; 
+let openOffersCounter = 0;
+let openBlocksCounter = 0;
 
 $('.express-delivery-title').on('click', function(){
-  openOffer(hotOffers, expressDeliveryForm, expressDeliveryContent);
+  openOffer('.hot-offers', '#express-delivery','.express-delivery-content');
 });
 $('.ground-delivery-title').on('click', function(){
-  openOffer(hotOffers, groundDeliveryForm, groundDeliveryContent);
+  openOffer('.hot-offers','#ground-delivery' ,'.ground-delivery-content');
 });
 $('.ship-delivery-title').on('click', function(){
-  openOffer(hotOffers, shipDeliveryForm, shipDeliveryContent);
+  openOffer('.hot-offers','#ship-delivery' ,'.ship-delivery-content');
 });
+$('.train-type-title').on('click', function(){
+  openBlock('.delivery-types', '#train-type', '.train-type-content');
+});
+$('.fast-train-type-title').on('click', function(){
+  openBlock('.delivery-types', '#fast-train-type', '.fast-train-type-content');
+});
+
 
 function openOffer(section, form, content){
   let closeFlag;
-  let openFlag;
   ($(form).height() == 65) ? closeFlag = 1 : ($(form).height() == 490) ? closeFlag = 0 : closeFlag = -1;
   
   if($(section).width() <= 1020 & closeFlag != -1){
@@ -104,6 +104,35 @@ function openOffer(section, form, content){
   }
 
 }
+
+function openBlock(section, form, content){
+  let closeFlag;
+  ($(form).height() == 58) ? closeFlag = 1 : ($(form).height() == 258) ? closeFlag = 0 : closeFlag = -1;
+  
+  if($(section).width() <= 1020 & closeFlag != -1){
+    if(closeFlag == 1){
+      $(content).removeClass('hidden');
+      $(form).toggleClass('delivery-types__block-open');
+      openBlocksCounter++;
+    }
+    if(closeFlag == 0){
+      $(content).toggleClass('hidden');
+      $(form).removeClass('delivery-types__block-open');
+      openBlocksCounter--;
+    }
+    if(openBlocksCounter == 0) {
+      $(section).removeClass('delivery-types_once-open');
+      $(section).removeClass('delivery-types_twice-open');
+      $(section).removeClass('delivery-types_tree-times-open');
+      $(section).removeClass('delivery-types_four-times-open');
+    }
+    if(openBlocksCounter == 1) $(section).toggleClass('delivery-types_once-open');
+    if(openBlocksCounter == 2) $(section).toggleClass('delivery-types_twice-open');
+    if(openBlocksCounter == 3) $(section).toggleClass('delivery-types_tree-times-open');
+    if(openBlocksCounter == 4) $(section).toggleClass('delivery-types_four-times-open');
+  }
+}
+
 // forms close / open animation--------------------------------------------------------
 
 // slider-------------------------------------

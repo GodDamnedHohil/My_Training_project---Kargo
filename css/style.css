@@ -31,6 +31,9 @@ textarea {
   .container {
     max-width: 750px;
   }
+  .hidden {
+    display: none !important;
+  }
 }
 
 @media (max-width: 780px) {
@@ -1678,9 +1681,6 @@ textarea {
   .hot-offers__form-open {
     height: 490px;
   }
-  .hidden {
-    display: none;
-  }
 }
 
 .china-agent {
@@ -2465,5 +2465,61 @@ textarea {
   align-items: flex-end;
   width: 100%;
   height: 70px;
+}
+
+@media (max-width: 1173px) {
+  .delivery-types {
+    height: 650px;
+  }
+  .delivery-types__block {
+    width: 300px;
+  }
+  .delivery-types__block-container {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 670px;
+  }
+}
+
+@media (max-width: 780px) {
+  .delivery-types__block {
+    width: 250px;
+  }
+}
+
+@media (max-width: 590px) {
+  .delivery-types__block {
+    width: 155px;
+    border: none;
+  }
+  .delivery-types__block-container {
+    justify-content: space-around;
+    align-content: center;
+  }
+  .delivery-types__block-title {
+    color: #25333c;
+    font-size: 14px;
+    text-align: center;
+  }
+  .delivery-types__block-title-wrap {
+    background: #ffff;
+  }
+}
+
+@media (max-width: 490px) {
+  .delivery-types__title {
+    font-size: 25px;
+  }
+  .delivery-types__block {
+    width: 130px;
+    justify-content: space-evenly;
+  }
+  .delivery-types__block-text {
+    font-size: 20px;
+  }
+  .delivery-types__block-button {
+    font-size: 11px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
