@@ -2522,4 +2522,128 @@ textarea {
     font-size: 11px;
   }
 }
+
+.order-check {
+  display: flex;
+  justify-content: center;
+  height: 355px;
+  width: 100%;
+}
+
+.order-check__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: inherit;
+}
+
+.order-check__title {
+  font-family: 'Open Sans Regular';
+  font-size: 30px;
+  text-align: center;
+  color: #25333c;
+}
+
+.order-check__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+}
+
+.order-check__form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  height: 125px;
+  width: 550px;
+  margin: 15px auto;
+}
+
+.order-check__form-container {
+  width: 100%;
+  height: 250px;
+}
+
+.order-check__form-border {
+  width: inherit;
+  height: 215px;
+  border: 1px solid #e93b3e;
+  padding: 0;
+}
+
+.order-check__form-input {
+  width: 265px;
+  height: 50px;
+  padding: 20px 150px 20px 25px;
+  margin: 0 5px;
+  font-family: 'Open Sans Light';
+  font-size: 13px;
+  color: #25333c;
+}
+
+.order-check__form-button {
+  width: 175px;
+  background: #e93b3e;
+  font-family: 'Open Sans Semibold';
+  font-size: 14px;
+  color: #ffff;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.order-check__form-button:active {
+  background: #af171a;
+  transition: .3s;
+}
+
+.order-check__form-button-wrap {
+  display: flex;
+  justify-content: center;
+  height: 55px;
+  width: 205px;
+  background: #ffff;
+}
+
+.order-check__logo-container {
+  margin: auto;
+  width: 120px;
+  height: 100px;
+}
+
+.order-check__logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e93b3e;
+  border-radius: 50%;
+  margin: auto;
+}
+
+@media (max-width: 590px) {
+  .order-check {
+    height: 455px;
+  }
+  .order-check__form {
+    height: 225px;
+  }
+  .order-check__form-border {
+    height: 315px;
+  }
+  .order-check__form-container {
+    height: 450px;
+  }
+}
+
+@media (max-width: 490px) {
+  .order-check__title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
 /*# sourceMappingURL=style.css.map */

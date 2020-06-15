@@ -1,0 +1,94 @@
+.order-check
+  display: flex
+  justify-content: center
+  height: 355px
+  width: 100%
+  &__inner
+    display: flex
+    flex-direction: column
+    width: 100%
+    height: inherit
+  &__title
+    +regular
+    font-size: 30px
+    text-align: center
+    color: $dark-blue
+    &-container
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 70px
+  &__form
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-content: space-between
+    height: 125px
+    width: 550px
+    margin: 15px auto
+    &-container
+      width: 100%
+      height: 250px
+    &-border
+      width: inherit
+      height: 215px
+      border: 1px solid#e93b3e
+      padding: 0
+    &-input
+      width: 265px
+      height: 50px
+      padding: 20px 150px 20px 25px
+      margin: 0 5px
+      +light
+      font-size: 13px
+      color: $dark-blue
+    &-button
+      width: 175px
+      background: #e93b3e
+      +semibold
+      font-size: 14px
+      color: #ffff
+      border: none
+      border-radius: 3px
+      text-transform: uppercase
+      transition: .3s
+      cursor: pointer
+      &:active
+        background: #af171a
+        transition: .3s
+      &-wrap
+        display: flex
+        justify-content: center
+        height: 55px
+        width: 205px
+        background: #ffff
+  &__logo
+    &-container
+      margin: auto
+      width: 120px
+      height: 100px
+    &-wrap
+      display: flex
+      justify-content: center
+      align-items: center
+      border: 1px solid #e93b3e
+      border-radius: 50%
+      margin: auto
+
+@media ( max-width: 590px )
+  .order-check
+    height: 455px
+    &__form
+      height: 225px
+      &-border
+        height: 315px
+      &-container
+        height: 450px
+
+@media ( max-width: 490px )
+  .order-check
+    &__title
+      font-size: 25px
+      margin-bottom: 10px
+
