@@ -5,6 +5,7 @@
   background-image: url('../img/china-agent-bg.jpeg')
   background-position: right 53%
   background-repeat: no-repeat
+  background-size: cover
   z-index: 1
   &::after
     position: absolute
@@ -18,7 +19,6 @@
   &__inner
     display: flex
     align-items: flex-start
-    width: 935px
     z-index: 3
   &__content-wrap
     display: flex
@@ -47,15 +47,13 @@
     +light
     text-align: center
     width: 100%
-   
-@media ( max-width: 780px )
-  .china-agent
-    &__description
-      font-size: 15px
 
 @media ( max-width: 780px )
   .china-agent
     &__description
       font-size: 13px
   
-    
+@media ( max-width: 590px )
+  .china-agent
+    &__title
+      font-size: 25px

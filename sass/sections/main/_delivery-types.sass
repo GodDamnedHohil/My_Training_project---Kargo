@@ -103,29 +103,38 @@
   .delivery-types
     height: 650px
     &__block
-      width: 300px
+      flex-basis: 34%
+      border: none
       &-container
-        justify-content: space-evenly
+        justify-content: center
         flex-wrap: wrap
         align-content: space-around
         height: 670px
-
+      &-title
+        color: $dark-blue
+        text-align: center
+        font-size: 14px
+        &-wrap
+          background: #ffff
+    &__title
+      &-container
+        align-items: center
 @media ( max-width: 780px)
   .delivery-types
     &__block
       width: 250px
+      
 
 @media ( max-width: 590px)
   .delivery-types
     &__block
-      width: 155px 
+      flex-basis: 40%
       border: none
       &-container
         justify-content: space-around
         align-content: center
       &-title
         color: $dark-blue
-        font-size: 14px
         text-align: center
         &-wrap
           background: #ffff
@@ -142,6 +151,8 @@
       justify-content: space-evenly
       &-button
         font-size: 11px
+      &-title
+        font-size: 13px
       
 
 

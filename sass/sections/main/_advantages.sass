@@ -10,8 +10,8 @@
     
   &__block
     height: 150px
-    width: 265px
     display: flex
+    flex-basis: 22%
     flex-direction: column
     align-items: center
     justify-content: space-between
@@ -29,16 +29,44 @@
     //adaptive for PC
 @media ( max-width: 1173px )
   .advantages
-    height: 380px
     &__inner
       height: inherit
       justify-content: space-around
       flex-wrap: wrap
-      width: 600px
+
+@media ( max-width: 1020px )
+  .advantages
+    height: 200px
+    &__title
+      font-size: 12px
+    &__description
+      font-size: 11px
+    &__block
+      height: 120px
+  
+@media ( max-width: 780px )
+  .advantages
+    &__logos
+      height: 45px
+      width: 45px
+    &__title
+      font-size: 10px
+    &__description
+      font-size: 10px
     //adaptive for phones
 @media ( max-width: 590px )
   .advantages
-    height: 760px
-  
-  
+    height: 300px
+    &__block
+      flex-basis: 40%
+
+@media ( max-width: 390px )
+  .advantages
+    height: 200px
+    &__title
+      font-size: 12px
+    &__description
+      display: none
+    &__block
+      height: 70px
   

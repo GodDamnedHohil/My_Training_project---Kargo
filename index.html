@@ -19,16 +19,19 @@
         <div class="header__info">
           <button class="header__button">translate</button>
           <!--^Translate__button^-->
-          <a class="header__track-delivery">
-            <object type="image/svg+xml" data="img/wallet.svg" class="calculate-price-logo"></object>
-            <span class="calculate-price-logo__text">Рассчитать доставку груза из Китая</span>
-          </a>
-          <!--^Calculate__delivery__link^-->
-          <a href="#" class="header__track-delivery">
-            <object type="image/svg+xml" data="img/track.svg" class="delivery-logo"></object>
-            <span class="delivery-logo__text">Проследить посылку из Китая</span>
-          </a>
-          <!--^Track__delivery__link^-->          
+          <div class="header__track-delivery-container">
+            <a class="header__track-delivery">
+              <object type="image/svg+xml" data="img/wallet.svg" class="calculate-price-logo"></object>
+              <span class="calculate-price-logo__text">Рассчитать доставку груза из Китая</span>
+            </a>
+            <!--^Calculate__delivery__link^-->
+            <a href="#" class="header__track-delivery">
+              <object type="image/svg+xml" data="img/track.svg" class="delivery-logo"></object>
+              <span class="delivery-logo__text">Проследить посылку из Китая</span>
+            </a>
+            <!--^Track__delivery__link^-->  
+          </div>
+
           <span class="header__mobile"><object type="image/svg+xml" data="img/phone.svg" class="mobile-logo"></object>8 800 70 00 842</span>
           <span class="header__email"><object type="image/svg+xml" data="img/mail.svg" class="email-logo"></object>88007000842@1kargo.ru</span>
         </div>
@@ -876,7 +879,7 @@
                 <object class="order-check__logo" data="img/order-check-logo.svg" type="image/svg+xml"></object>
               </div>
             </legend>
-            <form action="#" id="check-order" class="container order-check__form">
+            <form action="#" id="check-order" class="order-check__form">
               <input type="text" class="order-check__form-input" placeholder="Код клиента">
               <input type="text" class="order-check__form-input" placeholder="Номер заказа">
               <div class="order-check__form-button-wrap">

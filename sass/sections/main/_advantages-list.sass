@@ -5,10 +5,10 @@
   align-items: center
   &__inner
     width: 100%
-    height: 540px
+    height: 100% !important
     display: flex
     flex-direction: column
-    justify-content: space-between
+    justify-content: center
   &__headers
     &-container
       display: flex
@@ -34,6 +34,7 @@
       height: 19px
   &__main-container
     display: flex
+    justify-content: center
     height: 450px
     width: 100%
   &__numeration
@@ -148,12 +149,18 @@
       width: 45px
 @media (max-width: 590px)
   .advantages-list
+    height: 600px
     &__right-list
       width: 215px
     &__left-list
       width: 215px
     &__text-container
       width: 155px
+    &__header
+      &-primary
+        font-size: 25px
+      &-secondary
+        font-size: 15px
 @media (max-width: 490px)
   .advantages-list
     &__right-list

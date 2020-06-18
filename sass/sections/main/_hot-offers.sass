@@ -62,7 +62,7 @@
     text-transform: uppercase
     +bold
     font-size: 16px
-    color: #fff
+    color: #ffff
     &-container
       width: inherit
       height: 65px
@@ -104,24 +104,24 @@
 
 @media ( max-width: 1020px )
   .hot-offers
-    height: 500px
+    height: 400px
     transition: 2s
     &_once-open
-      height: 990px
+      height: 890px !important
     &_twice-open
-      height: 1480px
+      height: 1380px  !important
     &_tree-times-open
-      height: 1970px
+      height: 1870px  !important
     &__inner
       width: inherit
     &__titles-container
-      height: 200px
+      height: 100px
       align-items: center
     &__titles
-      height: 180px
+      height: 100px
       justify-content: center
     &__title
-      height: 80px
+      height: 45px
       text-align: center
       &_primary
         text-align: center
@@ -136,15 +136,32 @@
       display: flex
       flex-wrap: wrap
       height: 65px
-      width: inherit
+      border-radius: 5px
+      width: 555px
       margin: 10px 0
       transition: 1.5s
       overflow: hidden
       &-open
         height: 490px
+      &-title
+        +semibold
 
+@media ( max-width: 590px )
+  .hot-offers
+    height: 450px
+    &__titles-container
+      height: 150px
+    &__title
+      font-size: 25px
+      &_primary
+        font-size: 15px
+    &__form
+      width: 100%
+      &-title
+        font-size: 14px
 
     
-      
-
-    
+@media ( max-width: 431px )
+  .hot-offers
+    &__title
+      height: 80px
