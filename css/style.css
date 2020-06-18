@@ -144,6 +144,8 @@ textarea {
   font-size: 13px;
   padding: 13px 115px 13px 20px;
   border: 1px solid #a3a0a2;
+  border-radius: 3px;
+  width: 273px;
 }
 
 .button {
@@ -553,7 +555,6 @@ textarea {
 }
 
 .hero__form-wrap {
-  height: 100%;
   width: 315px;
 }
 
@@ -601,9 +602,9 @@ textarea {
 }
 
 .hero__form-input:nth-child(4) {
-  padding: 13px 114px 22px 20px;
-  line-height: 15px;
   width: 273px;
+  height: 50px;
+  padding: 10px 150px 20px 20px;
 }
 
 .hero__form-button {
@@ -801,40 +802,36 @@ textarea {
     flex-direction: column;
     justify-content: space-around;
   }
+  .hero__title {
+    font-size: 30px;
+  }
+  .hero__form {
+    position: relative;
+  }
   .hero__form-title {
-    display: flex;
-    flex-direction: row;
-  }
-  .hero__form-title span:first-of-type {
-    width: 150px;
-    font-family: 'Open Sans Semibold';
-    font-size: 16px;
-  }
-  .hero__form-title span:last-of-type {
-    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -65px;
+    border-radius: 5px;
+    background: #25333c;
   }
   .hero__form-wrap {
-    height: 400px;
-    width: 500px;
+    width: 450px;
   }
-  .hero__input-group {
-    width: 500px;
-  }
-  .hero__form-input {
-    padding: 13px 220px 13px 20px;
-  }
-  .hero__form-input:last-child {
-    padding: 13px 220px 22px 20px;
-    line-height: 15px;
-    width: 378px;
-  }
-  .hero__form-button {
-    height: 75px;
-    width: 250px;
-    font-size: 16px;
+  .hero__input-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
   }
   .hero__logo {
     width: 330px;
+  }
+  .hero__form-title span:nth-of-type(1) {
+    color: #ffff;
+    margin-bottom: 3px;
+  }
+  .hero__form-title span:nth-of-type(2) {
+    color: #ffff;
   }
   .sidebar {
     left: 0;
@@ -863,7 +860,7 @@ textarea {
   .sidebar__links {
     font-size: 23px;
     height: 40px;
-    margin-left: 5px;
+    margin-left: 10px;
   }
   .sidebar__links-group {
     width: 80%;
@@ -950,15 +947,14 @@ textarea {
     width: 460px;
     height: 230px;
   }
+  .hero {
+    height: 900px;
+  }
   .hero__title {
-    font-size: 40px;
+    font-size: 25px;
   }
-  .hero__form-wrap {
-    width: 460px;
-    height: 400px;
-  }
-  .hero__input-group {
-    width: 460px;
+  .hero__title-wrap {
+    height: 100px;
   }
   .hero__navbar-link {
     font-size: 10px;
@@ -986,92 +982,15 @@ textarea {
   .hero__navbar-link:focus::after {
     width: 100%;
   }
-}
-
-@media (max-width: 590px) {
-  .hero {
-    height: 900px;
-  }
-  .hero__title {
-    font-size: 25px;
-  }
-  .hero__title-wrap {
-    height: 100px;
-  }
   .hero__nav-wrap {
     height: 55px;
-  }
-  .hero__form-wrap {
-    height: 400px;
-    width: 315px;
   }
   .hero__main {
     height: 700px;
   }
-  .hero__form-title {
-    height: 70px;
-    background: #25333c;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero__form-title span:nth-of-type(1) {
-    font-family: 'Open Sans Bold';
-    text-transform: uppercase;
-    font-size: 15px;
-    color: #ffffff;
-    line-height: 20px;
-  }
-  .hero__form-title span:nth-of-type(2) {
-    font-family: 'Open Sans Semibold';
-    text-transform: uppercase;
-    font-size: 12px;
-    color: #ffffff;
-  }
-  .hero__input-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 330px;
-    background: rgba(213, 210, 212, 0.7);
-  }
-  .hero__input-group {
-    padding-top: 15px;
-    width: 280px;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .hero__form-input {
-    font-family: 'Open Sans Light';
-    font-size: 13px;
-    padding: 13px 115px 13px 20px;
-    border: 1px solid #a3a0a2;
-  }
-  .hero__form-input:focus {
-    outline: none;
-  }
-  .hero__form-input:last-child {
-    padding: 13px 114px 22px 20px;
-    line-height: 15px;
-    width: 273px;
-  }
-  .hero__form-button {
-    font-family: 'Open Sans Semibold';
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #ffffff;
-    margin-top: 15px;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-  }
-  .hero__form-button:focus {
-    outline: none;
+  .hero__form-wrap {
+    width: 90%;
+    margin-top: 40px;
   }
   .sidebar__links {
     font-size: 17px;
@@ -1091,6 +1010,9 @@ textarea {
 }
 
 @media (max-width: 490px) {
+  .hero__form-wrap {
+    margin-top: 30px;
+  }
   iframe {
     width: 360px;
     height: 180px;
