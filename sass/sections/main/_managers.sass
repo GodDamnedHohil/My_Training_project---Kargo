@@ -1,0 +1,155 @@
+.managers
+  height: 720px
+  width: 100%
+  background-color: #F3F3F3
+  &__inner
+    width: 100%
+    margin: auto
+  &__title
+    +regular
+    color: #3A3A3A
+    font-size: 30px
+    &-container
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      width: 100%
+      height: 75px
+      text-align: center
+  &__block
+    display: flex
+    justify-content: center
+    position: relative
+    width: 360px
+    height: 260px
+    margin: 30px auto 0 auto
+    &-container
+      display: flex
+      flex-wrap: wrap
+      align-content: flex-start
+      width: 100%
+      height: 605px
+    &-image
+      width: 100%
+      height: 100%
+      border-radius: 50%
+      &-wrap
+        display: flex
+        position: absolute
+        height: 145px
+        width: 145px
+        top: 0
+        z-index: 10
+    &-bottom
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      position: absolute
+      bottom: 0
+      left: 0
+      right: 0
+      height: 125px
+      background: #ffff
+    &-text-container
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      height: 58px
+      width: 282px  
+    &-title
+      +bold
+      font-size: 16px
+      color: #E93B3B
+      &-wrap
+        display: flex
+        justify-content: center
+        width: 100%
+    &-description
+      +light
+      font-size: 13px
+      color:#3A3A3A
+      line-height: 1.4
+      &-wrap
+        display: flex
+        justify-content: center
+        text-align: center
+
+@media ( min-width: 1173px )
+  .managers__block
+    &:nth-child(1)
+      margin-left: 0
+    &:nth-child(3)
+      margin-right: 0
+
+@media ( max-width: 1173px )
+  .managers
+    &__title-container
+      align-items: center
+
+@media ( max-width: 1020px )
+  .managers
+    &__block
+      width: 280px
+      &-title
+        font-size: 14px
+      &-description
+        font-size: 11px
+        width: 220px
+
+@media ( max-width: 780px )
+  .managers
+    height: 620px
+    &__block
+      height: 205px
+      width: 260px
+      &-container
+        height: 540px
+      &-text-container
+        width: 240px
+      &-bottom
+        height: 100px
+      &-title
+        font-size: 14px
+      &-description
+        font-size: 10px
+        &-wrap
+          width: 200px
+      &-image-wrap
+        width: 115px
+        height: 115px
+
+
+@media ( max-width: 590px )
+  .managers
+    &__block
+      width: 220px
+      &-text-container
+        width: 200px
+      &-description
+        font-size: 10px
+        &-wrap
+          width: 170px
+    &__title
+      font-size: 25px
+
+@media ( max-width: 490px )
+  .managers
+    &__block
+      width: 170px
+      &-title
+        font-size: 13px
+        &-wrap
+          width: 140px
+      &-description
+        &-wrap
+          width: 130px
+      
+
+@media ( max-width: 390px )
+  .managers
+    &__block
+      width: 140px
+      &-text-container
+        width: 140px
