@@ -2854,4 +2854,122 @@ textarea {
     width: 140px;
   }
 }
+
+.personal-manager-ad {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 345px;
+  background: url("../img/personal-manager-ad.jpeg");
+  background-size: cover;
+  background-position: right 15%;
+  background-repeat: no-repeat;
+}
+
+.personal-manager-ad::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(1, 2, 46, 0.5);
+  z-index: 2;
+}
+
+.personal-manager-ad__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 3;
+}
+
+.personal-manager-ad__logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 160px;
+  width: 100%;
+}
+
+.personal-manager-ad__logo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  z-index: 3;
+}
+
+.personal-manager-ad__text-container {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  width: 100%;
+  z-index: 3;
+}
+
+.personal-manager-ad__title {
+  font-family: 'Open Sans Regular';
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.personal-manager-ad__title-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.personal-manager-ad__description {
+  height: 45px;
+  margin: 0;
+  font-family: 'Open Sans Light';
+  font-size: 19px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.personal-manager-ad__description-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60px;
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .personal-manager-ad__description {
+    font-size: 15px;
+  }
+  .personal-manager-ad__text-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 780px) {
+  .personal-manager-ad__description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 590px) {
+  .personal-manager-ad__title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 390px) {
+  .personal-manager-ad__title {
+    font-size: 20px;
+  }
+  .personal-manager-ad__title-wrap {
+    height: 80px;
+  }
+  .personal-manager-ad__description-wrap {
+    height: 70px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
