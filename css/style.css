@@ -1676,7 +1676,7 @@ textarea {
   justify-content: center;
   align-items: center;
   height: 330px;
-  width: inherit;
+  width: 100%;
   color: #ffff;
   z-index: 3;
 }
@@ -3070,6 +3070,83 @@ textarea {
   }
   .licenses__block-container {
     height: 520px;
+  }
+}
+
+.china-location-ad {
+  display: block;
+  position: relative;
+  height: 345px;
+  background-image: url("../img/china-location-ad-bg.jpeg");
+  background-position: right 53%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.china-location-ad::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(4, 4, 20, 0.589);
+  z-index: 2;
+}
+
+.china-location-ad__inner {
+  display: flex;
+  align-items: flex-start;
+  z-index: 3;
+}
+
+.china-location-ad__content-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 330px;
+  width: 100%;
+  color: #ffff;
+  z-index: 3;
+}
+
+.china-location-ad__logo-wrap {
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.china-location-ad__title {
+  margin: 20px 0;
+  font-size: 30px;
+  font-family: 'Open Sans Regular';
+}
+
+.china-location-ad__description {
+  margin: 0;
+  font-size: 19px;
+  font-family: 'Open Sans Light';
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+}
+
+@media (max-width: 780px) {
+  .china-location-ad__description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 590px) {
+  .china-location-ad__title {
+    font-size: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

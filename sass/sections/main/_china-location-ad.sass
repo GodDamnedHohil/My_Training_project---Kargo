@@ -1,8 +1,8 @@
-.china-agent
+.china-location-ad
   display: block
   position: relative
   height: 345px
-  background-image: url('../img/china-agent-bg.jpeg')
+  background-image: url('../img/china-location-ad-bg.jpeg')
   background-position: right 53%
   background-repeat: no-repeat
   background-size: cover
@@ -14,7 +14,7 @@
     left: 0
     right: 0
     bottom: 0
-    background: rgba(0, 0, 0, 0.3)
+    background: rgba(4, 4, 20, 0.589)
     z-index: 2
   &__inner
     display: flex
@@ -29,7 +29,7 @@
     width: 100%
     color: #ffff
     z-index: 3
-  &__icon-wrap
+  &__logo-wrap
     z-index: 3
     display: flex
     justify-content: center
@@ -43,17 +43,19 @@
     font-size: 30px
     +regular
   &__description
+    margin: 0
     font-size: 19px
     +light
     text-align: center
     width: 100%
+    line-height: 1.5
 
 @media ( max-width: 780px )
-  .china-agent
+  .china-location-ad
     &__description
       font-size: 13px
   
 @media ( max-width: 590px )
-  .china-agent
+  .china-location-ad
     &__title
       font-size: 25px
