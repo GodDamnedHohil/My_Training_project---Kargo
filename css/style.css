@@ -2225,48 +2225,26 @@ textarea {
   z-index: 3;
 }
 
-.managers-ad__logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 160px;
-  width: 100%;
-}
-
 .managers-ad__logo-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 1px solid #fff;
   z-index: 3;
 }
 
-.managers-ad__text-container {
-  display: flex;
-  flex-direction: column;
-  height: 120px;
-  width: 100%;
-  z-index: 3;
-}
-
 .managers-ad__title {
   font-family: 'Open Sans Regular';
+  margin: 20px 0;
   font-size: 30px;
   text-align: center;
   color: #fff;
 }
 
-.managers-ad__title-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 50px;
-  width: 100%;
-}
-
 .managers-ad__description {
-  height: 45px;
   margin: 0;
   font-family: 'Open Sans Light';
   font-size: 19px;
@@ -2274,20 +2252,20 @@ textarea {
   text-align: center;
 }
 
-.managers-ad__description-wrap {
+.managers-ad__content-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  height: 60px;
-  width: 100%;
+  align-items: center;
+  height: 330px;
+  width: inherit;
+  color: #ffff;
+  z-index: 3;
 }
 
 @media (max-width: 780px) {
   .managers-ad__description {
     font-size: 15px;
-  }
-  .managers-ad__text-container {
-    height: 200px;
   }
 }
 
@@ -2300,15 +2278,6 @@ textarea {
 @media (max-width: 590px) {
   .managers-ad__title {
     font-size: 25px;
-  }
-}
-
-@media (max-width: 390px) {
-  .managers-ad__title-wrap {
-    height: 80px;
-  }
-  .managers-ad__description-wrap {
-    height: 70px;
   }
 }
 
@@ -2884,19 +2853,12 @@ textarea {
   z-index: 3;
 }
 
-.personal-manager-ad__logo-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 160px;
-  width: 100%;
-  margin-bottom: 15px;
-}
-
 .personal-manager-ad__logo-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 1px solid #fff;
   z-index: 3;
@@ -2912,16 +2874,10 @@ textarea {
 
 .personal-manager-ad__title {
   font-family: 'Open Sans Regular';
+  margin: 20px 0;
   font-size: 30px;
   text-align: center;
   color: #fff;
-}
-
-.personal-manager-ad__title-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
 }
 
 .personal-manager-ad__description {
@@ -2933,12 +2889,15 @@ textarea {
   text-align: center;
 }
 
-.personal-manager-ad__description-wrap {
+.personal-manager-ad__content-wrap {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
-  height: 60px;
-  width: 100%;
+  align-items: center;
+  height: 330px;
+  width: inherit;
+  color: #ffff;
+  z-index: 3;
 }
 
 @media (max-width: 780px) {
