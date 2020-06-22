@@ -3149,4 +3149,87 @@ textarea {
     font-size: 25px;
   }
 }
+
+.service {
+  height: 585px;
+  width: 100%;
+  background: #ffff;
+}
+
+.service__inner {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+}
+
+.service__title {
+  font-family: 'Open Sans Regular';
+  font-size: 30px;
+  text-align: center;
+  color: #3a3a3a;
+}
+
+.service__title-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 25px;
+}
+
+.service__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  width: 265px;
+}
+
+.service__block-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 100%;
+  height: 270px;
+}
+
+.service__block-img {
+  width: 50px;
+  height: 50px;
+}
+
+.service__block-title {
+  font-family: 'Open Sans Bold';
+  font-size: 16px;
+  text-align: center;
+  color: #E93B3B;
+}
+
+.service__block-description {
+  font-family: 'Open Sans Light';
+  font-size: 13px;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+.service__comment {
+  font-family: 'Open Sans Bold';
+  font-size: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+.service__comment-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 130px;
+  border: 1px solid #3a3a3a;
+  margin-top: 40px;
+  padding: 0 58px;
+}
 /*# sourceMappingURL=style.css.map */

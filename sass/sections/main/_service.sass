@@ -1,0 +1,61 @@
+.service
+  height: 585px
+  width: 100%
+  background: #ffff
+  &__inner
+    height: 100%
+    width: 100%
+    margin: auto
+  &__title
+    +regular
+    font-size: 30px
+    text-align: center
+    color: #3a3a3a
+    &-container
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      width: 100%
+      height: 75px
+      margin-bottom: 25px
+  &__block
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+    height: 120px
+    width: 265px
+    &-container
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-content: space-between
+      width: 100%
+      height: 270px
+    &-img
+      width: 50px
+      height: 50px
+    &-title
+      +bold
+      font-size: 16px
+      text-align: center
+      color: #E93B3B
+    &-description
+      +light
+      font-size: 13px
+      color: #3a3a3a
+      text-align: center
+  &__comment
+    +bold
+    font-size: 16px
+    text-align: center
+    margin: 0
+    &-container
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 100%
+      height: 130px
+      border: 1px solid #3a3a3a
+      margin-top: 40px
+      padding: 0 58px
