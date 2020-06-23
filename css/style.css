@@ -145,7 +145,7 @@ textarea {
   padding: 13px 115px 13px 20px !important;
   height: 50px;
   width: 273px;
-  border: 1px solid #c8cbcf;
+  border: 1px solid #969697;
   border-radius: 3px;
 }
 
@@ -201,10 +201,6 @@ textarea {
 
 .button_primary:focus {
   outline: none;
-}
-
-.button:last-of-type {
-  margin: 0;
 }
 
 .dimensions {
@@ -3851,6 +3847,10 @@ textarea {
 .feedback__form-comment {
   height: 65px;
   width: 100%;
+}
+
+.feedback__form-button {
+  margin: 0;
 }
 
 .feedback__form-button-container {
