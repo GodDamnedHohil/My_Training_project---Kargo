@@ -1,0 +1,228 @@
+.news
+  height: 610px
+  width: 100%
+  background: #ffffff
+  &__inner
+    height: 100%
+    width: 100%
+    margin: auto
+  &__title
+    +regular
+    font-size: 30px
+    color: #3a3a3a
+    text-align: center
+    &-container
+      display: flex
+      justify-content: center
+      align-items: flex-end
+      height: 70px
+      margin-bottom: 25px
+  &__block
+    width: 360px
+    height: 425px
+    &-container
+      display: flex
+      justify-content: space-between
+      height: 425px
+      width: 100%
+      margin-bottom: 15px
+    &-image
+      &-container
+        background-size: cover
+        background-position: center
+        height: 360px
+        height: 200px
+    &-text
+      &-container
+        display: flex
+        width: 100%
+        height: 225px
+      &-wrap
+        display: flex
+        flex-direction: column
+        justify-content: space-evenly
+        width: 258px
+        height: 100%
+    &-date
+      &-wrap
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        width: 100px !important
+        height: 100%
+      &-gray-block
+        width: 3px
+        height: 85px
+        background-color: #C8C3BD
+      &-circle
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        position: absolute
+        top: -25px
+        width: 80px
+        height: 80px
+        background: #ffffff
+        border-radius: 50%
+      &-num
+        +bold
+        font-size: 30px
+        color: #E93B3B
+      &-text
+        +regular
+        font-size: 12px
+        color: #E93B3B
+      &-title
+    &-description
+      font-size: 14px
+      +light
+      margin: 0
+      text-align: justify
+    &-title
+      +bold
+      font-size: 14px
+      color: #E93B3B
+  &__button
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 170px
+    height: 45px
+    background: #ffffff
+    border: 1px solid #e93b3b
+    border-radius: 3px
+    +semibold
+    color: #e93b3b
+    font-size: 12px
+    text-align: center
+    text-decoration: none
+    text-transform: uppercase
+    transition: .2s
+    &:hover
+      background:#e93b3b
+      color: #ffffff
+      cursor: pointer
+      border: 1px solid #ffff
+      transition: .2s
+    &:active
+      background: #ca0000d5
+      transition: .3s
+    &-container
+      display: flex
+      justify-content: center
+      width: 100%
+      height: 45px
+
+#News1-img
+  background-image: url('../img/News1-bg.jpeg')
+#News2-img
+  background-image: url('../img/News2-bg.jpeg')
+#News3-img
+  background-image: url('../img/News3-bg.jpeg')
+
+@media ( max-width: 1173px )
+  .news
+    &__block
+      width: 280px
+      &-container
+        justify-content: space-evenly
+      &-description
+        font-size: 13px
+      &-text-container
+        height: 190px
+
+@media  ( max-width: 1020px )
+  .news
+    height: 550px
+    &__block
+      width: 360px
+      height: 100%
+      &:last-of-type
+        display: none
+      &-container
+        height: 360px  
+        justify-content: space-between
+      &-date
+        &-num
+          font-size: 25px
+        &-circle
+          width: 50px
+          height: 50px
+      &-text-container
+        height: 150px
+      &-title
+        font-size: 12px
+      &-description
+        font-size: 11px
+
+@media  ( max-width: 790px )
+  .news
+    &__block
+      width: 300px
+      &-title
+        font-size: 10px
+      &-description
+        font-size: 10px
+      &-container
+        justify-content: space-evenly
+
+@media  ( max-width: 690px )
+  .news
+    height: 500px
+    &__block
+      width: 250px
+      &-image-container
+        height: 150px
+      &-container
+        height: 300px
+        margin-bottom: 40px
+    &__title
+      &-container
+        align-items: center
+        margin: 0
+
+@media ( max-width: 590px )
+  .news
+    &__block
+      width: 200px
+      &-container
+        margin-bottom: 30px
+      &-image-container
+        height: 120px
+      &-text-container
+        height: 180px
+    &__title
+      font-size: 25px
+      
+
+@media  ( max-width: 490px )
+  .news
+    &__block
+      width: 80%
+      &-container
+        height: 350px
+        margin-bottom: 0
+      &-image-container
+        height: 200px
+      &-text-container
+        height: 150px
+      &:nth-of-type(2)
+        display: none
+
+
+@media ( max-width: 390px )
+  .news
+    height: 470px
+    &__block
+      width: 90%
+      &-container
+        height: 320px
+      &__text-container
+        height: 150px
+      &-image-container
+        height: 150px
+  
+        
+
