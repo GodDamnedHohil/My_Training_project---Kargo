@@ -1,0 +1,129 @@
+.footer
+  width: 100%
+  height: 115px
+  background-color: $dark-blue
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    height: 100%
+    margin: auto
+  &__logo
+    display: flex
+    width: 295px 
+    height: 60px
+    &-text
+      display: flex
+      justify-content: center
+      flex-direction: column
+  &__info
+    &-container
+      display: flex
+      justify-content: space-between
+      height: 60px
+      width: 800px
+    &-delivery
+      display: flex
+      align-items: center
+      position: relative
+      text-decoration: none
+      +light
+      color: #d3d6d8
+      font-size: 14px
+      width: fit-content
+      &::after
+        position: absolute
+        display: block
+        content: ""
+        bottom: -2px
+        height: 1px
+        width: 0%
+        left: 50%
+        transition: width .4s
+        background-color: $grey
+        transform: translateX(-50%)
+      &:hover::after
+        width: 100% 
+      &:focus::after
+        width: 100%
+      &-container
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        width: 275px
+        height: 100%
+      &-logo
+        width: 18px
+        height: 18px
+        margin-right: 5px
+    &-contacts
+      display: flex
+      align-items: center
+      color: $grey
+      font-size: 14px
+      +light
+      &-bold
+        +bold
+      &-container
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        width: 195px
+        height: 100%
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 35px
+    width: 35px
+    border: 1px solid $grey
+    &-container
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 205px
+      height: 100%
+    
+@media ( max-width: 1173px )
+  .footer
+    &__info-container
+      width: 700px
+
+@media  ( max-width: 1020px )
+  .footer
+    height: 200px
+    &__inner
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+    &__logo
+      margin-bottom: 20px
+    &__info-container
+      width: 100%
+      height: 50px
+
+@media ( max-width: 790px )
+  .footer
+    height: 230px
+    &__info
+      &-container
+        height: 110px
+        flex-wrap: wrap
+        align-content: space-between
+      &-delivery-container
+        width: 100%
+        height: 50px
+      &-contacts-container
+        height: 50px
+    &__button-container
+      height: 50px
+
+@media  ( max-width: 590px )
+  .footer
+    height: 340px
+    &__info
+      &-container
+        height: 200px
+      &-contacts-container
+        width: 100%
