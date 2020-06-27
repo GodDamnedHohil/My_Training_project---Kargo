@@ -57,6 +57,7 @@
     color: $grey
     margin: auto 20px
     cursor: pointer
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1)
     &-container
       display: flex
       justify-content: flex-end
@@ -64,20 +65,19 @@
       width: fit-content
 
   &__track-delivery::after
-    background-color: $grey
     display: block
+    position: absolute
     content: ""
     bottom: -2px
     height: 1px
-    width: 0%
-    left: 50%
-    position: absolute
-    transition: width .4s
-    transform: translateX(-50%)
-  &__track-delivery:hover::after
-    width: 100%   
-  &__track-delivery:focus::after
+    left: 0
     width: 100%
+    transition: .35s
+    background-color: transparent
+  &__track-delivery:hover::after
+    background-color: $grey
+  &__track-delivery:focus::after
+    background-color: $grey
 //---icons---
 .mobile-logo 
   +icon

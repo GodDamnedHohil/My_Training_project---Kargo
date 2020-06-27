@@ -149,6 +149,11 @@ textarea {
   border-radius: 3px;
 }
 
+.input:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #8a8a8b;
+}
+
 .button {
   padding: 17px 33px;
   font-family: 'Open Sans Semibold';
@@ -157,19 +162,20 @@ textarea {
   color: #ffffff;
   margin: 15px auto;
   background: #e93b3b;
+  border: 1px solid #e93b3b;
   border: none;
   border-radius: 5px;
-  transition: ease-in-out 0.3s;
+  transition: 0.2s;
 }
 
 .button:hover {
-  background: #ca0000d5;
   cursor: pointer;
 }
 
 .button:active {
   background: #ffffff;
-  color: #ca0000d5;
+  color: #25333c;
+  border: 1px solid #25333c;
 }
 
 .button:focus {
@@ -326,6 +332,7 @@ textarea {
   color: #d3d6d8;
   margin: auto 20px;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
 }
 
 .header__track-delivery-container {
@@ -336,24 +343,23 @@ textarea {
 }
 
 .header__track-delivery::after {
-  background-color: #d3d6d8;
   display: block;
+  position: absolute;
   content: "";
   bottom: -2px;
   height: 1px;
-  width: 0%;
-  left: 50%;
-  position: absolute;
-  transition: width .4s;
-  transform: translateX(-50%);
+  left: 0;
+  width: 100%;
+  transition: .35s;
+  background-color: transparent;
 }
 
 .header__track-delivery:hover::after {
-  width: 100%;
+  background-color: #d3d6d8;
 }
 
 .header__track-delivery:focus::after {
-  width: 100%;
+  background-color: #d3d6d8;
 }
 
 .mobile-logo {
@@ -1209,6 +1215,7 @@ textarea {
   height: 50px;
   width: 265px;
   border: 1px solid #C1C4C7;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .calculator__form-select-wrap {
@@ -1223,11 +1230,16 @@ textarea {
   padding: 10px 0 10px 18px;
   color: #616467;
   transition: 0.2s;
+  -webkit-tap-highlight-color: #f0f3f7;
 }
 
 .calculator__form-select-option:hover {
   background-color: #f0f3f7;
   cursor: pointer;
+}
+
+.calculator__form-select-option:active {
+  background-color: #e2e3e4;
 }
 
 .calculator__form-select-checked {
@@ -1297,6 +1309,12 @@ textarea {
 
 .calculator__form-product-dimensions-row label:nth-of-type(2) {
   margin-left: 10px;
+}
+
+.calculator__submit-btn:active {
+  background-color: #fff;
+  color: #e93b3b;
+  border-color: #e93b3b;
 }
 
 .calculator__submit-btn-wrap {
@@ -1499,7 +1517,6 @@ textarea {
   text-align: center;
   width: 200px;
   height: 30px;
-  margin-top: 10px;
 }
 
 .hot-offers__form-title {
@@ -1516,6 +1533,10 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.hot-offers__form-title-container:active {
+  border: 3px solid #fff;
 }
 
 .hot-offers__logo-wrap {
@@ -1553,7 +1574,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 135px;
+  height: 155px;
   width: inherit;
   margin-top: 10px;
 }
@@ -2027,6 +2048,7 @@ textarea {
 }
 
 .reviews__slider-bottom-container {
+  outline: none;
   height: 270px;
   width: 100%;
 }
@@ -2054,6 +2076,7 @@ textarea {
   cursor: pointer;
   transition: .3s;
   border-radius: 5px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .reviews__slider-arrow-container:hover {
@@ -2073,6 +2096,7 @@ textarea {
   width: 100%;
   height: 263px !important;
   text-align: center !important;
+  outline: none;
 }
 
 .reviews__client-review {
@@ -2391,19 +2415,17 @@ textarea {
   text-decoration: none;
   text-transform: uppercase;
   transition: .2s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .delivery-types__block-button:hover {
-  background: #e93b3b;
-  color: #ffffff;
   cursor: pointer;
-  border: 1px solid #ffff;
   transition: .2s;
 }
 
 .delivery-types__block-button:active {
-  background: #ca0000d5;
-  transition: .3s;
+  background: #e93b3b;
+  color: #ffffff;
 }
 
 .delivery-types__block-button-container {
@@ -2548,22 +2570,34 @@ textarea {
   color: #25333c;
 }
 
+.order-check__form-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 4px 0px #ceced1;
+}
+
 .order-check__form-button {
   width: 175px;
   background: #e93b3e;
   font-family: 'Open Sans Semibold';
   font-size: 14px;
   color: #ffff;
-  border: none;
+  border: 1px solid #e93b3e;
   border-radius: 3px;
   text-transform: uppercase;
   transition: .3s;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .order-check__form-button:active {
-  background: #af171a;
+  color: #e93b3e;
+  background: #ffff;
+  border-radius: #e93b3e;
   transition: .3s;
+}
+
+.order-check__form-button:focus {
+  outline: none;
 }
 
 .order-check__form-button-wrap {
@@ -3593,19 +3627,18 @@ textarea {
   text-decoration: none;
   text-transform: uppercase;
   transition: .2s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .news__button:hover {
-  background: #e93b3b;
-  color: #ffffff;
   cursor: pointer;
-  border: 1px solid #ffff;
-  transition: .2s;
 }
 
 .news__button:active {
-  background: #ca0000d5;
+  color: #ffffff;
+  background: #e93b3b;
   transition: .3s;
+  border-radius: 3px;
 }
 
 .news__button-container {
@@ -3929,21 +3962,19 @@ textarea {
   position: absolute;
   display: block;
   content: "";
-  bottom: -2px;
+  bottom: -4px;
   height: 1px;
-  width: 0%;
-  left: 50%;
-  transition: width .4s;
-  background-color: #d3d6d8;
-  transform: translateX(-50%);
+  width: 100%;
+  transition: .4s;
+  background-color: transparent;
 }
 
 .footer__info-delivery:hover::after {
-  width: 100%;
+  background-color: #d3d6d8;
 }
 
 .footer__info-delivery:focus::after {
-  width: 100%;
+  background-color: #d3d6d8;
 }
 
 .footer__info-delivery-container {

@@ -36,17 +36,15 @@
         position: absolute
         display: block
         content: ""
-        bottom: -2px
+        bottom: -4px
         height: 1px
-        width: 0%
-        left: 50%
-        transition: width .4s
-        background-color: $grey
-        transform: translateX(-50%)
-      &:hover::after
-        width: 100% 
-      &:focus::after
         width: 100%
+        transition: .4s
+        background-color: transparent
+      &:hover::after
+        background-color: $grey       
+      &:focus::after
+        background-color: $grey  
       &-container
         display: flex
         flex-direction: column

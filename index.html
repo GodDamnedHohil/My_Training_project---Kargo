@@ -199,10 +199,10 @@
             <!-- links -->
             <a href="#main-page-info" class="hero__navbar-link main-page-link">Главная<object id="arrow-1" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
             <a href="#delivery-info" class="hero__navbar-link delivery-link">Доставка<object id="arrow-2" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#china-service-info" class="hero__navbar-link">Услуги в Китае<object id="arrow-3" data="img/down-arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a id="service-link" href="#service" class="hero__navbar-link">Услуги в Китае<object id="arrow-3" data="img/down-arrow.svg" type="image/svg+xml" class="arrow"></object></a>
             <a href="#info" class="hero__navbar-link info-link">Инфо<object id="arrow-4" data="img/arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#news-info" class="hero__navbar-link">Новости<object id="arrow-5" data="img/down-arrow.svg" type="image/svg+xml" class="arrow"></object></a>
-            <a href="#contacts-info" class="hero__navbar-link">Контакты<object id="arrow-6" data="img/down-arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a id="news-link" href="#news" class="hero__navbar-link">Новости<object id="arrow-5" data="img/down-arrow.svg" type="image/svg+xml" class="arrow"></object></a>
+            <a id="contacts-link" href="#footer" class="hero__navbar-link">Контакты<object id="arrow-6" data="img/down-arrow.svg" type="image/svg+xml" class="arrow"></object></a>
           </nav>
         </div>
         <!--^hero_navbar^-->
@@ -881,7 +881,7 @@
               <input type="text" class="order-check__form-input" placeholder="Номер заказа">
               <!-- ^ inputs ^ -->
               <div class="order-check__form-button-wrap">
-                <input type="submit" form="check-order" class="order-check__form-button" value="Проверить">
+                <button type="submit" form="check-order" class="order-check__form-button" >Проверить</button>
                 <!-- ^ button ^ -->
               </div>
             </form>
@@ -1081,7 +1081,7 @@
     </section>
     <!-- ^ china-location-ad ^ -->
     <!-- Service -->
-    <section class="service">
+    <section id="service" class="service">
       <div class="container service__inner">
         <div class="service__title-container">
           <span class="service__title">Как мы работаем?</span>
@@ -1206,7 +1206,7 @@
     </section>
     <!-- ^ Additional service ^ -->
     <!-- News -->
-    <section class="news">
+    <section id="news" class="news">
       <div class="container news__inner">
         <div class="news__title-container">
           <span class="news__title">Новости</span>
@@ -1316,7 +1316,7 @@
   </main>
   <!-----^ Main ^----->
   <!-- Footer -->
-  <footer class="footer">
+  <footer id="footer" class="footer">
     <div class="container footer__inner">
       <div class="footer__logo">
         <img src="img/1kargo_2.png" alt="logo" class="logo">

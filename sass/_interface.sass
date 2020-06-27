@@ -17,6 +17,10 @@
   width: 273px 
   border: 1px solid #969697
   border-radius: 3px
+  &:focus
+    outline: none
+    box-shadow: 0px 0px 4px 0px #8a8a8b
+
 .button
   padding: 17px 33px
   +semibold
@@ -25,15 +29,16 @@
   color: #ffffff
   margin: 15px auto
   background: #e93b3b
+  border: 1px solid #e93b3b
   border: none
   border-radius: 5px
-  transition: ease-in-out 0.3s  
+  transition: 0.2s  
   &:hover
-    background: #ca0000d5
     cursor: pointer
   &:active
     background: #ffffff 
-    color: #ca0000d5
+    color: $dark-blue
+    border: 1px solid $dark-blue
   &:focus
     outline: none
   &_primary

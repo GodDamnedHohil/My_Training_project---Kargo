@@ -46,20 +46,28 @@
       +light
       font-size: 13px
       color: $dark-blue
+      &:focus
+        outline: none
+        box-shadow: 0px 0px 4px 0px #ceced1
     &-button
       width: 175px
       background: #e93b3e
       +semibold
       font-size: 14px
       color: #ffff
-      border: none
+      border: 1px solid #e93b3e
       border-radius: 3px
       text-transform: uppercase
       transition: .3s
       cursor: pointer
+      -webkit-tap-highlight-color: transparent
       &:active
-        background: #af171a
+        color: #e93b3e
+        background: #ffff
+        border-radius: #e93b3e
         transition: .3s
+      &:focus
+        outline: none
       &-wrap
         display: flex
         justify-content: center

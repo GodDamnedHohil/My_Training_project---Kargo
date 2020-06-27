@@ -1,3 +1,18 @@
+//anchor scroll anim
+$('#service-link').on('click', function(e){
+  $('html,body').stop().animate({ scrollTop: $('#service').offset().top }, 2000);
+  e.preventDefault();
+});
+$('#news-link').on('click', function(e){
+  $('html,body').stop().animate({ scrollTop: $('#news').offset().top }, 2000);
+  e.preventDefault();
+});
+$('#contacts-link').on('click', function(e){
+  $('html,body').stop().animate({ scrollTop: $('#footer').offset().top }, 2000);
+  e.preventDefault();
+});
+//^ anchor-scroll-animation ^
+
 // dropdowns------------------------------------------------------------
 $('.issuance').on('click', function() {
   $('#issuance').toggleClass('calculator__form-select-dropdown-open')
