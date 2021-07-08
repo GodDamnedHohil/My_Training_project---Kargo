@@ -1,1 +1,2 @@
-# This is my training front-end project
+## Nostalgia...
+I know it is a bad one. I keep this project here, because it's my first ever created ))))). 
